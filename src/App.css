@@ -36,3 +36,75 @@
     transform: rotate(360deg);
   }
 }
+.notfound{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+  background: #fff;
+}
+/* .active1{
+  color: red;
+} */
+.bottom-nav {
+    width: 20rem;
+    height: 2.613rem;
+    position: fixed;
+    z-index: 17;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: rgb(255, 255, 255); 
+    border-top: 1px solid rgb(238, 238, 238);
+}
+.bottom-nav a {
+    display: inline-block;
+    width: 4.5rem;
+    height: 2.613rem;
+    color: #999;
+    background-repeat: no-repeat;
+    background-position: center .3rem;
+    background-size: 1.2rem 1.07rem;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-top: 1.5rem;
+    font-size: 10px;
+    text-decoration: none;
+    font-family: Arial, helvetica, "\5FAE\8F6F\96C5\9ED1", "Microsoft Yahei", sans-serif;
+}
+.tabbar-index{
+    color: rgb(153, 153, 153);
+    background-image: url(http://p12.jmstatic.com/mcms/89ea87200c623f4c7809f21f2ab4bce8.png);
+}
+.tabbar-index.active1{
+    color: rgb(254, 64, 112);
+    background-image: url(https://p12.jmstatic.com/mcms/5e9e00537e4a635e36e84db81f2cc17a.png);
+}
+.tabbar-coutuan{
+    color: rgb(153, 153, 153);
+    background-image: url(https://p12.jmstatic.com/mcms/b51a66ca3ddb31ec0edbd67ea68f7589.png);
+}
+.tabbar-coutuan.active1{
+    color: rgb(254, 64, 112);
+    background-image: url(https://p12.jmstatic.com/mcms/562fb7b2ae7bf1cacdc8ed91493e53af.png);
+}
+.tabbar-cart{
+    color: rgb(153, 153, 153);
+    background-image: url(https://p12.jmstatic.com/mcms/77b9454e8dd41a060510a445010ac934.png);
+}
+.tabbar-cart.active1{
+    color: rgb(254, 64, 112);
+    background-image: url(https://p12.jmstatic.com/mcms/35143fe7ab8afbaa41da2ea6e766d62b.png);
+}
+.tabbar-member{
+    color: rgb(153, 153, 153);
+    background-image: url(https://p12.jmstatic.com/mcms/829aa091062366a9f7b93cfffaa0e681.png);
+}
+.tabbar-member.active1{
+    color: rgb(254, 64, 112);
+    background-image: url(https://p12.jmstatic.com/mcms/482fb198341f583f92f1151eff6b99f0.png);
+}

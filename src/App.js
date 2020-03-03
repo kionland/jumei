@@ -1,26 +1,30 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { subRoutes } from './router/index'
+import { Route, Switch, Redirect, NavLink, withRouter } from 'react-router-dom'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Switch>
+       {
+        subRoutes.map((item) => {
+          return <Route key={item.path} path={item.path} component={item.component} />
+        })
+        }
+        <Redirect from="/" to="/home" exact />
+        <Redirect  to="/404"  />
+      </Switch>
+
+      <div className="bottom-nav" >
+      {
+        subRoutes.map((item) => {
+          return <NavLink key={item.path} to={item.path} activeClassName="active1" className={item.className}>{item.title}</NavLink>
+        })
+        }
+      </div>
     </div>
   );
 }
 
-export default App;
+export default withRouter(App);
