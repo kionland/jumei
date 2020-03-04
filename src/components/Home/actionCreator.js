@@ -11,5 +11,19 @@ export default {
             ,payload:bool
         }
     }
+    ,
+    changeIndex(index){
+        return {
+            type: 'CHANGEINDEX'
+            ,payload:index
+        }
+    }
+    ,
+    changeIdx(index){
+        return {
+            type: 'CHANGEIDX'
+            ,payload:index
+        }
+    }
     
 }

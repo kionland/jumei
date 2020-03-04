@@ -8,7 +8,7 @@ var pool = mysql.createPool({
     user: 'root',
     password: '',
     port: 3306,
-    database: 'nro',
+    database: 'jumei',
     multipleStatements: true
 });
 //高级版：返回一个promise对象

@@ -4,7 +4,6 @@ const express = require('express');
 const usresRouter = require('./users') //引入子路由
 const goodsRouter = require('./goods') //引入子路由
 const ordersRouter = require('./orders') //引入子路由
-const jumeiRouter = require("./jumei")
 const Router = express.Router(); //路由设置  Router==app
 //把这个路由配置放在所有路由的前面，方便调用next操作
 Router.use((req, res, next) => {
@@ -32,6 +31,5 @@ Router.use((req, res, next) => {
 Router.use('/users', usresRouter);
 Router.use('/goods', goodsRouter);
 Router.use('/orders', ordersRouter);
-Router.use('/jumei', jumeiRouter);
 
 module.exports = Router;

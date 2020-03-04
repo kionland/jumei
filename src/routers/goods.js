@@ -8,7 +8,7 @@ var urlencodeParser = bodyParser.urlencoded({
     extended: false
 });
 
-
+//男士购
 //查询所有
 Router.get('/all', urlencodeParser, async (req, res) => {
     let {
@@ -218,7 +218,7 @@ Router.patch('/patch', urlencodeParser, async (req, res) => {
     }
 });
 
-//注册功能
+//新增男士购商品功能
 Router.post('/reg', urlencodeParser, async (req, res) => {
     let {
         type1,
@@ -255,5 +255,63 @@ Router.post('/reg', urlencodeParser, async (req, res) => {
 
 })
 
+
+//新增-聚美优品-首页-今日10点上新-列表功能
+Router.post('/addlist', urlencodeParser, express.json(),async (req, res) => {
+    let {
+        description, brand, countdown, smallImg, bigImg
+    } = req.body; //解构
+    if (description && brand && countdown && smallImg && bigImg) {
+        let sql = `INSERT INTO home_list_discount(list_id,description, brand,countdown,smallImg,bigImg) VALUES (NULL,'${description}','${brand}','${countdown}','${smallImg}','${bigImg}')`;
+        let data = await query(sql);
+        let result = {};
+        if (data.affectedRows) {
+            //插入成功
+            result = {
+                type: 1,
+                msg: '新增成功'
+            }
+        } else {
+            result = {
+                type: 0,
+                msg: '新增失败'
+            }
+        }
+        res.send(result);
+    } else {
+        res.send('请填写全部数据')
+    }
+
+})
+//聚美优品-查询-首页-今天10点上新-列表数据
+//查询所有
+Router.get('/jumei_all', urlencodeParser, async (req, res) => {
+    let {
+        table
+    } = req.query;
+  
+    let sql = `SELECT * FROM ${table}`;
+    let data = await query(sql);
+
+    let result = {};
+    if (data.length) {
+        //成功返回的数据
+        result = {
+            type: 1,
+            msg: 'success',
+            data
+        }
+    } else {
+        //失败返回的数据
+        result = {
+            type: 0,
+            msg: 'fail',
+            data: []
+        }
+    }
+
+    res.send(result);
+
+});
 
 module.exports = Router;

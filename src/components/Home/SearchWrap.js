@@ -44,11 +44,16 @@ class SearchWrap extends Component {
                     <ul className="search_links search_ul">
                         {
                             this.props.SWR.searchList.map((item, index) => {
-                                return <li className={currentIndex===index ? "select search_link" :'search_link'} key={index} onClick={this.toggle.bind(this,index)}>{item.name}<span className="arrow"></span>
+                                return <li className={currentIndex === index ? "select search_link" : 'search_link'} key={index} onClick={this.toggle.bind(this, index)}>
+                                    {item.name}
+                                    <span className="arrow"></span>
+
                                     <ul className="search_subs" style={{ display: currentIndex === index?'block':'none'}}>
                                         {
                                             item.sub_categories.map((ele, idx) => {
-                                                return <li className="search_sub" key={idx}><a href="/search/index?category_id=62" >{ele.name}</a></li>
+                                                return <li className="search_sub" key={idx}>
+                                                    <a  >{ele.name}</a>
+                                                </li>
                                             })
                                         }
                                         
