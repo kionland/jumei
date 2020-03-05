@@ -259,10 +259,10 @@ Router.post('/reg', urlencodeParser, async (req, res) => {
 //新增-聚美优品-首页-今日10点上新-列表功能
 Router.post('/addlist', urlencodeParser, express.json(),async (req, res) => {
     let {
-        description, brand, countdown, smallImg, bigImg
+        buyNum, imgSrc, groupPrice, jumeiPrice, title
     } = req.body; //解构
-    if (description && brand && countdown && smallImg && bigImg) {
-        let sql = `INSERT INTO home_list_discount(list_id,description, brand,countdown,smallImg,bigImg) VALUES (NULL,'${description}','${brand}','${countdown}','${smallImg}','${bigImg}')`;
+    if (buyNum && imgSrc && groupPrice && jumeiPrice && title) {
+        let sql = `INSERT INTO group_list_next(list_id,buyNum, imgSrc,groupPrice,jumeiPrice,title) VALUES (NULL,'${buyNum}','${imgSrc}','${groupPrice}','${jumeiPrice}','${title}')`;
         let data = await query(sql);
         let result = {};
         if (data.affectedRows) {
@@ -290,7 +290,7 @@ Router.get('/jumei_all', urlencodeParser, async (req, res) => {
         table
     } = req.query;
   
-    let sql = `SELECT * FROM ${table}`;
+    let sql = `SELECT * FROM ${table} LIMIT 0,50`;
     let data = await query(sql);
 
     let result = {};
