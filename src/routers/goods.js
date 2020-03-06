@@ -262,7 +262,7 @@ Router.post('/addlist', urlencodeParser, express.json(),async (req, res) => {
         buyNum, imgSrc, groupPrice, jumeiPrice, title
     } = req.body; //解构
     if (buyNum && imgSrc && groupPrice && jumeiPrice && title) {
-        let sql = `INSERT INTO group_list_next(list_id,buyNum, imgSrc,groupPrice,jumeiPrice,title) VALUES (NULL,'${buyNum}','${imgSrc}','${groupPrice}','${jumeiPrice}','${title}')`;
+        let sql = `INSERT INTO group_list_baby(list_id,buyNum, imgSrc,groupPrice,jumeiPrice,title) VALUES (NULL,'${buyNum}','${imgSrc}','${groupPrice}','${jumeiPrice}','${title}')`;
         let data = await query(sql);
         let result = {};
         if (data.affectedRows) {

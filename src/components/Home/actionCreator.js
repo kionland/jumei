@@ -25,5 +25,12 @@ export default {
             ,payload:index
         }
     }
+    ,
+    changeWarn(bool){
+        return {
+            type: 'CHANGEWARN'
+            ,payload:bool
+        }
+    }
     
 }

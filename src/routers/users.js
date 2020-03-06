@@ -28,12 +28,12 @@ const { create, verify } = require('./token');
 Router.get('/checkname', async (req, res) => {
     //接受前端数据
     let {
-        username
+        phone
     } = req.query;
     // console.log(username);
     //做数据库查询
-    if (username) {
-        let sql = `SELECT * FROM userlist WHERE username='${username}'`;
+    if (phone) {
+        let sql = `SELECT * FROM user_list WHERE phone='${phone}'`;
         let data = await query(sql);
         let result = {};
         if (data.length) { // '0' 真  0 假

@@ -1,5 +1,7 @@
 
 import NotFound from '../components/NotFound/NotFound'
+import Register from '../components/Mine/Register'
+import Login from '../components/Mine/Login'
 import Cart from '../components/Cart/Cart'
 import Group from '../components/Group/Group'
 import Home from '../components/Home/Home'
@@ -88,6 +90,16 @@ const subRoutes = [
     {
         path: '/404',
         component: NotFound
+    }
+    ,
+    {
+        path: '/reg',
+        component: Register
+    }
+    ,
+    {
+        path: '/login',
+        component: Login
     }
 ]
  
