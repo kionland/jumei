@@ -14,6 +14,16 @@ export default class Baby extends Component {
                 list: res.data.data
             })
         })
+       
+        // axios({
+        //     method: 'get',
+        //     url: "https://m.sohu.com/cbdconf/getPageConfig/Index?randomKey=1583467843223ld1gituu6p"
+        // }).then((resp) => {
+        //     console.log(resp);
+        // }, (err) => {
+        //     console.log(err);
+        // });
+
     }
     render() {
         return (

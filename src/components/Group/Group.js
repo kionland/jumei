@@ -31,6 +31,7 @@ export default class Group extends Component {
                         })
                     }
                     <Redirect from="/group" to="/group/recommend" exact />
+                    <Redirect to="/404" />
                 </Switch>
                 <a className="goto-top block" onClick={this.goTop}></a>
             </div>

@@ -13,7 +13,7 @@ function App() {
         })
         }
         <Redirect from="/" to="/home" exact />
-        {/* <Redirect  to="/404"  /> */}
+        <Redirect  to="/404"  />
       </Switch>
 
       <div className="bottom-nav" >
