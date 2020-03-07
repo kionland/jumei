@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50520
 File Encoding         : 65001
 
-Date: 2020-03-05 23:59:51
+Date: 2020-03-08 00:18:16
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -27,7 +27,7 @@ CREATE TABLE `group_list_baby` (
   `jumeiPrice` varchar(255) DEFAULT NULL,
   `title` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`list_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=138 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=303 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of group_list_baby
@@ -169,6 +169,171 @@ INSERT INTO `group_list_baby` VALUES ('134', '4条评论', 'http://mp5.jmstatic.
 INSERT INTO `group_list_baby` VALUES ('135', '暂无评论', 'http://mp5.jmstatic.com/product/005/091/5091682_std/5091682_1000_1000.jpg?v=1577440374&imageView2/2/w/440/q/90', '269', '329', '[2人团]惠氏铂臻Wyeth 幼儿配方奶粉3段800g 瑞士原装进口');
 INSERT INTO `group_list_baby` VALUES ('136', '暂无评论', 'http://mp5.jmstatic.com/product/004/878/4878716_std/4878716_1000_1000.jpg?v=1557122407&imageView2/2/w/440/q/90', '66', '78', '[2人团]美国布朗博士软吸嘴训练杯颜色随');
 INSERT INTO `group_list_baby` VALUES ('137', '55条评论', 'http://mp5.jmstatic.com/product/003/072/3072353_std/3072353_1000_1000.jpg?v=1542698117&imageView2/2/w/440/q/90', '43', '49', '[2人团]十月妈咪清新漱口水孕妇护肤品');
+INSERT INTO `group_list_baby` VALUES ('138', '13条评论', 'http://mp5.jmstatic.com/product/005/019/5019074_std/5019074_1000_1000.jpg?v=1568612499&imageView2/2/w/440/q/90', '85', '138', '[2人团]【手机专享】MERRIES/花王婴儿拉拉裤XXL26片');
+INSERT INTO `group_list_baby` VALUES ('139', '43条评论', 'http://mp5.jmstatic.com/product/005/019/5019068_std/5019068_1000_1000.jpg?v=1568612487&imageView2/2/w/440/q/90', '85', '126', '[2人团]【手机专享】MERRIES/花王婴儿纸尿裤L5');
+INSERT INTO `group_list_baby` VALUES ('140', '8条评论', 'http://mp6.jmstatic.com/product/004/561/4561904_std/4561904_1000_1000.jpg?v=1559727541&imageView2/2/w/440/q/90', '19.9', '199', '[2人团]【手机专享】HD小龙哈彼樱花深层水柔亲肤温和湿');
+INSERT INTO `group_list_baby` VALUES ('141', '12条评论', 'http://mp5.jmstatic.com/product/005/019/5019070_std/5019070_1000_1000.jpg?v=1568612491&imageView2/2/w/440/q/90', '85', '170', '[2人团]【手机专享】MERRIES/花王婴儿拉拉裤L44片');
+INSERT INTO `group_list_baby` VALUES ('142', '18条评论', 'http://mp5.jmstatic.com/product/005/019/5019062_std/5019062_1000_1000.jpg?v=1568612477&imageView2/2/w/440/q/90', '85', '138', '[2人团]【手机专享】MERRIES/花王婴儿纸尿裤NB90片');
+INSERT INTO `group_list_baby` VALUES ('143', '39条评论', 'http://mp5.jmstatic.com/product/005/019/5019072_std/5019072_1000_1000.jpg?v=1568612493&imageView2/2/w/440/q/90', '85', '138', '[2人团]【手机专享】MERRIES/花王婴儿拉拉XL38片');
+INSERT INTO `group_list_baby` VALUES ('144', '2436条评论', 'http://mp6.jmstatic.com/product/004/433/4433546_std/4433546_1000_1000.jpg?v=1579160130&imageView2/2/w/440/q/90', '49', '198', '[2人团]【手机专享】子初 水光舒润补水面膜 保湿补水 孕妇专用护肤品套装 20片');
+INSERT INTO `group_list_baby` VALUES ('145', '146条评论', 'http://mp6.jmstatic.com/product/002/465/2465709_std/2465709_1000_1000.jpg?v=1578194858&imageView2/2/w/440/q/90', '98', '398', '[2人团]【手机专享】袋鼠妈妈豆乳补水保湿三件套孕妇护肤品套装');
+INSERT INTO `group_list_baby` VALUES ('146', '13条评论', 'http://mp5.jmstatic.com/product/005/019/5019064_std/5019064_1000_1000.jpg?v=1568612480&imageView2/2/w/440/q/90', '85', '145', '[2人团]【手机专享】MERRIES/花王婴儿纸尿裤S82片');
+INSERT INTO `group_list_baby` VALUES ('147', '1315条评论', 'http://mp5.jmstatic.com/product/002/448/2448708_std/2448708_1000_1000.jpg?v=1574833380&imageView2/2/w/440/q/90', '58', '178', '[2人团]【手机专享】袋鼠妈妈孕妇防晒霜孕妇护肤品孕');
+INSERT INTO `group_list_baby` VALUES ('148', '719条评论', 'http://mp6.jmstatic.com/product/003/779/3779706_std/3779706_1000_1000.jpg?v=1568962070&imageView2/2/w/440/q/90', '89', '299', '[2人团]【手机专享】gb好孩子新手妈妈必备奶瓶套装');
+INSERT INTO `group_list_baby` VALUES ('149', '暂无评论', 'http://mp6.jmstatic.com/product/005/034/5034048_std/5034048_1000_1000.jpg?v=1569574593&imageView2/2/w/440/q/90', '79', '259', '[2人团]【手机专享】迪士尼儿童双盖两用304不锈钢保温');
+INSERT INTO `group_list_baby` VALUES ('150', '暂无评论', 'http://mp6.jmstatic.com/product/005/079/5079192_std/5079192_1000_1000.jpg?v=1573026901&imageView2/2/w/440/q/90', '115', '159', '[2人团]【手机专享】花王日本大增量版婴儿拉拉裤');
+INSERT INTO `group_list_baby` VALUES ('151', '276条评论', 'http://mp6.jmstatic.com/product/004/845/4845412_std/4845412_1000_1000.jpg?v=1569115446&imageView2/2/w/440/q/90', '49', '199', '[2人团]【手机专享】gb好孩子【大人通用】儿童防晒霜防紫');
+INSERT INTO `group_list_baby` VALUES ('152', '37条评论', 'http://mp6.jmstatic.com/product/004/558/4558750_std/4558750_1000_1000.jpg?v=1571132709&imageView2/2/w/440/q/90', '59', '399', '[2人团]【手机专享】gb好孩子干湿两用棉柔巾纸巾600片');
+INSERT INTO `group_list_baby` VALUES ('153', '暂无评论', 'http://mp5.jmstatic.com/product/005/148/5148240_std/5148240_1000_1000.jpg?v=1583379595&imageView2/2/w/440/q/90', '19.9', '29.9', '[2人团]【手机专享】免洗洗手液300ml凝胶杀菌消毒液便携式免洗速干免水洗凝胶现货家用');
+INSERT INTO `group_list_baby` VALUES ('154', '5条评论', 'http://mp5.jmstatic.com/product/005/019/5019066_std/5019066_1000_1000.jpg?v=1568612484&imageView2/2/w/440/q/90', '85', '138', '[2人团]【手机专享】MERRIES/花王标准版婴儿纸');
+INSERT INTO `group_list_baby` VALUES ('155', '暂无评论', 'http://mp6.jmstatic.com/product/005/137/5137204_std/5137204_1000_1000.jpg?v=1578974454&imageView2/2/w/440/q/90', '89', '167', '[2人团]【手机专享】大王/维E系列阿卡佳增量版纸尿裤新生儿98片/包');
+INSERT INTO `group_list_baby` VALUES ('156', '4条评论', 'http://mp6.jmstatic.com/product/004/569/4569842_std/4569842_1000_1000.jpg?v=1562046455&imageView2/2/w/440/q/90', '19.9', '199', '[2人团]【手机专享】HD小龙哈彼樱花亲肤温和湿巾袋盖');
+INSERT INTO `group_list_baby` VALUES ('157', '99条评论', 'http://mp5.jmstatic.com/product/004/696/4696148_std/4696148_1000_1000.jpg?v=1564046330&imageView2/2/w/440/q/90', '139', '289', '[2人团]【手机专享】妈咪宝贝纸尿裤尿不湿男女宝通用');
+INSERT INTO `group_list_baby` VALUES ('158', '16条评论', 'http://mp6.jmstatic.com/product/004/844/4844224_std/4844224_1000_1000.jpg?v=1571275331&imageView2/2/w/440/q/90', '19.9', '139', '[2人团]【手机专享】谷斐尔建议大一号夏网眼纯棉轻薄');
+INSERT INTO `group_list_baby` VALUES ('159', '已有2人参与', 'http://mp5.jmstatic.com/product/004/954/4954998_std/4954998_1000_1000.jpg?v=1563520993&imageView2/2/w/440/q/90', '168', '396', '[2人团]【手机专享】尤妮佳moony进口婴儿纸尿裤男女通用');
+INSERT INTO `group_list_baby` VALUES ('160', '3条评论', 'http://mp5.jmstatic.com/product/005/068/5068838_std/5068838_1000_1000.jpg?v=1576551765&imageView2/2/w/440/q/90', '88', '216', '[2人团]【手机专享】袋鼠妈妈 星钻系列口红 孕妇化妆品孕妇护肤品');
+INSERT INTO `group_list_baby` VALUES ('161', '390条评论', 'http://mp5.jmstatic.com/product/004/777/4777374_std/4777374_1000_1000.jpg?v=1583381397&imageView2/2/w/440/q/90', '56', '128', '[2人团]【手机专享】子初电热蚊香液无味婴儿孕妇家用');
+INSERT INTO `group_list_baby` VALUES ('162', '5条评论', 'http://mp5.jmstatic.com/product/004/847/4847488_std/4847488_1000_1000.jpg?v=1554263909&imageView2/2/w/440/q/90', '29.9', '158', '[2人团]【手机专享】谷斐尔 GOPHER彩棉纯棉宝宝春秋连体');
+INSERT INTO `group_list_baby` VALUES ('163', '93条评论', 'http://mp6.jmstatic.com/product/003/858/3858362_std/3858362_1000_1000.jpg?v=1573526129&imageView2/2/w/440/q/90', '19.9', '79', '[2人团]【手机专享】 啵乐乐 韩国进口儿童水果味多种牙');
+INSERT INTO `group_list_baby` VALUES ('164', '7条评论', 'http://mp6.jmstatic.com/product/005/069/5069334_std/5069334_1000_1000.jpg?v=1572420260&imageView2/2/w/440/q/90', '164', '356', '[2人团]【手机专享】帮宝适超薄干爽婴儿拉拉裤尿不湿');
+INSERT INTO `group_list_baby` VALUES ('165', '暂无评论', 'http://mp5.jmstatic.com/product/004/878/4878720_std/4878720_1000_1000.jpg?v=1556595218&imageView2/2/w/440/q/90', '39', '49', '[2人团]【手机专享】布朗博士爱宝选宽口奶嘴');
+INSERT INTO `group_list_baby` VALUES ('166', '142条评论', 'http://mp6.jmstatic.com/product/003/768/3768200_std/3768200_1000_1000.jpg?v=1571646364&imageView2/2/w/440/q/90', '18', '97', '[2人团]【手机专享】DuDi 儿童衣架多功能婴儿小孩衣服挂');
+INSERT INTO `group_list_baby` VALUES ('167', '暂无评论', 'http://mp5.jmstatic.com/product/005/034/5034050_std/5034050_1000_1000.jpg?v=1569574451&imageView2/2/w/440/q/90', '69', '359', '[2人团]【手机专享】迪士尼3D包胶耐摔手柄背带两用不锈');
+INSERT INTO `group_list_baby` VALUES ('168', '暂无评论', 'http://mp6.jmstatic.com/product/005/079/5079058_std/5079058_1000_1000.jpg?v=1581316197&imageView2/2/w/440/q/90', '36', '165', '[2人团]【手机专享】舒贝怡 婴儿连体衣春秋款卡通爬爬服');
+INSERT INTO `group_list_baby` VALUES ('169', '1条评论', 'http://mp6.jmstatic.com/product/005/083/5083504_std/5083504_1000_1000.jpg?v=1578195756&imageView2/2/w/440/q/90', '218', '699', '[2人团]【手机专享】袋鼠妈妈 豆乳补水保湿6件套孕妇护肤品套装');
+INSERT INTO `group_list_baby` VALUES ('170', '暂无评论', 'http://mp6.jmstatic.com/product/005/055/5055702_std/5055702_1000_1000.jpg?v=1573091050&imageView2/2/w/440/q/90', '119', '299', '[2人团]【手机专享】玉泽清痘调护平衡乳 50ml 敏感肌可');
+INSERT INTO `group_list_baby` VALUES ('171', '1条评论', 'http://mp6.jmstatic.com/product/005/088/5088110_std/5088110_1000_1000.jpg?v=1573726512&imageView2/2/w/440/q/90', '39', '68', '[2人团]【手机专享】耶丽娅宝宝洗发水沐浴露二合一婴');
+INSERT INTO `group_list_baby` VALUES ('172', '暂无评论', 'http://mp6.jmstatic.com/product/005/148/5148412_std/5148412_1000_1000.jpg?v=1582767680&imageView2/2/w/440/q/90', '52', '265', '[2人团]【手机专享】贝壳元素男童字母外套春装童装连帽长袖');
+INSERT INTO `group_list_baby` VALUES ('173', '1条评论', 'http://mp6.jmstatic.com/product/005/082/5082714_std/5082714_1000_1000.jpg?v=1573198941&imageView2/2/w/440/q/90', '9.9', '49', '[2人团]【手机专享】米菲儿童不锈钢防烫隔热餐具勺子');
+INSERT INTO `group_list_baby` VALUES ('174', '153条评论', 'http://mp5.jmstatic.com/product/003/523/3523074_std/3523074_1000_1000.jpg?v=1557455126&imageView2/2/w/440/q/90', '99', '289', '[2人团]【手机专享】安儿乐干爽超薄纸尿裤男女通用尿');
+INSERT INTO `group_list_baby` VALUES ('175', '102条评论', 'http://mp5.jmstatic.com/product/004/779/4779360_std/4779360_1000_1000.jpg?v=1582799561&imageView2/2/w/440/q/90', '49', '118', '[2人团]【手机专享】亲润孕妇口红丰盈魅色立体塑型9种颜色可选化妆品');
+INSERT INTO `group_list_baby` VALUES ('176', '48条评论', 'http://mp6.jmstatic.com/product/004/837/4837396_std/4837396_1000_1000.jpg?v=1559718908&imageView2/2/w/440/q/90', '209', '309', '[2人团]【手机专享】帮宝适超薄干爽婴儿纸尿裤尿不湿');
+INSERT INTO `group_list_baby` VALUES ('177', '1条评论', 'http://mp5.jmstatic.com/product/005/079/5079188_std/5079188_1000_1000.jpg?v=1573117053&imageView2/2/w/440/q/90', '34', '49', '[2人团]【手机专享】花王乐而雅瞬吸超薄夜用卫生巾');
+INSERT INTO `group_list_baby` VALUES ('178', '953条评论', 'http://mp6.jmstatic.com/product/003/779/3779686_std/3779686_1000_1000.jpg?v=1568961784&imageView2/2/w/440/q/90', '29', '199', '[2人团]【手机专享】gb好孩子婴儿橄榄洗发沐浴500ml洗头');
+INSERT INTO `group_list_baby` VALUES ('179', '暂无评论', 'http://mp5.jmstatic.com/product/004/969/4969452_std/4969452_1000_1000.jpg?v=1576487309&imageView2/2/w/440/q/90', '49', '269', '[2人团]【手机专享】贝壳元素春秋女童连衣裙圆领蕾丝长裙子');
+INSERT INTO `group_list_baby` VALUES ('180', '1条评论', 'http://mp5.jmstatic.com/product/004/968/4968182_std/4968182_1000_1000.jpg?v=1567041943&imageView2/2/w/440/q/90', '29.9', '149.9', '[2人团]【手机专享】欧培 水陆两用喷水球电动感应喷水');
+INSERT INTO `group_list_baby` VALUES ('181', '14条评论', 'http://mp6.jmstatic.com/product/004/133/4133286_std/4133286_1000_1000.jpg?v=1563245472&imageView2/2/w/440/q/90', '36', '175', '[2人团]【手机专享】贝壳家族秋装女长袖花朵连衣裙');
+INSERT INTO `group_list_baby` VALUES ('182', '8条评论', 'http://mp5.jmstatic.com/product/004/721/4721358_std/4721358_1000_1000.jpg?v=1552009396&imageView2/2/w/440/q/90', '36', '169', '[2人团]【手机专享】舒贝怡 婴幼儿翻领卡通长袖哈衣春');
+INSERT INTO `group_list_baby` VALUES ('183', '暂无评论', 'http://mp5.jmstatic.com/product/004/987/4987180_std/4987180_1000_1000.jpg?v=1566368041&imageView2/2/w/440/q/90', '29.9', '139', '[2人团]【手机专享】谷斐尔女宝宝上衣长袖粉色打底衫');
+INSERT INTO `group_list_baby` VALUES ('184', '86条评论', 'http://mp5.jmstatic.com/product/003/543/3543156_std/3543156_1000_1000.jpg?v=1571381007&imageView2/2/w/440/q/90', '39', '169', '[2人团]【手机专享】DuDi 儿童坐便器男女宝宝尿盆马桶卡');
+INSERT INTO `group_list_baby` VALUES ('185', '暂无评论', 'http://mp5.jmstatic.com/product/005/140/5140904_std/5140904_1000_1000.jpg?v=1581931677&imageView2/2/w/440/q/90', '36', '153', '[2人团]【手机专享】舒贝怡 婴儿连体衣纯棉偏开春秋薄款哈衣长袖衣服春装爬服');
+INSERT INTO `group_list_baby` VALUES ('186', '413条评论', 'http://mp5.jmstatic.com/product/002/479/2479488_std/2479488_1000_1000.jpg?v=1573810560&imageView2/2/w/440/q/90', '58', '238', '[2人团]【手机专享】袋鼠妈妈燕窝隔离乳孕妇护肤品孕');
+INSERT INTO `group_list_baby` VALUES ('187', '暂无评论', 'http://mp6.jmstatic.com/product/005/034/5034046_std/5034046_1000_1000.jpg?v=1569574451&imageView2/2/w/440/q/90', '69', '259', '[2人团]【手机专享】迪士尼儿童带锁宽嘴304内胆不锈钢');
+INSERT INTO `group_list_baby` VALUES ('188', '64条评论', 'http://mp6.jmstatic.com/product/003/118/3118088_std/3118088_1000_1000.jpg?v=1577957810&imageView2/2/w/440/q/90', '108', '398', '[2人团]【手机专享】袋鼠妈妈羊初乳皙润雪肌三件套孕妇护肤品套装');
+INSERT INTO `group_list_baby` VALUES ('189', '306条评论', 'http://mp6.jmstatic.com/product/003/820/3820490_std/3820490_1000_1000.jpg?v=1579503359&imageView2/2/w/440/q/90', '58', '188', '[2人团]【手机专享】亲润 温润养肤孕妇卸妆水210ml孕妇化妆品');
+INSERT INTO `group_list_baby` VALUES ('190', '2条评论', 'http://mp5.jmstatic.com/product/004/853/4853022_std/4853022_1000_1000.jpg?v=1560305550&imageView2/2/w/440/q/90', '49', '129', '[2人团]【手机专享】迪士尼儿童带锁扣软胶直饮便携水');
+INSERT INTO `group_list_baby` VALUES ('191', '19条评论', 'http://mp5.jmstatic.com/product/004/825/4825568_std/4825568_1000_1000.jpg?v=1552983467&imageView2/2/w/440/q/90', '99', '259', '[2人团]【手机专享】安儿乐拉拉裤弹力裤男女通用尿不');
+INSERT INTO `group_list_baby` VALUES ('192', '1条评论', 'http://mp5.jmstatic.com/product/004/493/4493948_std/4493948_1000_1000.jpg?v=1558508168&imageView2/2/w/440/q/90', '119', '299', '[2人团]【手机专享】托马斯双杯盖316不锈钢送杯套保温');
+INSERT INTO `group_list_baby` VALUES ('193', '40条评论', 'http://mp5.jmstatic.com/product/004/955/4955028_std/4955028_1000_1000.jpg?v=1563520998&imageView2/2/w/440/q/90', '336', '792', '[2人团]【手机专享】尤妮佳moony进口婴儿纸尿裤男女通用');
+INSERT INTO `group_list_baby` VALUES ('194', '1条评论', 'http://mp6.jmstatic.com/product/004/827/4827058_std/4827058_1000_1000.jpg?v=1560321530&imageView2/2/w/440/q/90', '79', '159', '[2人团]【手机专享】小黄鸭儿童鸭嘴弹盖ppsu吸管杯 宝宝');
+INSERT INTO `group_list_baby` VALUES ('195', '2条评论', 'http://mp5.jmstatic.com/product/005/102/5102368_std/5102368_1000_1000.jpg?v=1575338848&imageView2/2/w/440/q/90', '269', '429', '[2人团]【手机专享】惠氏启赋蓝钻Wyeth亲和人体幼儿配方');
+INSERT INTO `group_list_baby` VALUES ('196', '12条评论', 'http://mp6.jmstatic.com/product/002/856/2856892_std/2856892_1000_1000.jpg?v=1575891438&imageView2/2/w/440/q/90', '138', '209', '[2人团]【手机专享】十月妈咪孕妇乳液孕产妇护肤品保');
+INSERT INTO `group_list_baby` VALUES ('197', '2条评论', 'http://mp6.jmstatic.com/product/004/876/4876814_std/4876814_1000_1000.jpg?v=1557475935&imageView2/2/w/440/q/90', '39', '59', '[2人团]【手机专享】满趣健婴儿硅胶勺2只装婴儿辅食勺');
+INSERT INTO `group_list_baby` VALUES ('198', '2条评论', 'http://mp6.jmstatic.com/product/004/878/4878712_std/4878712_1000_1000.jpg?v=1562051966&imageView2/2/w/440/q/90', '39', '49', '[2人团]【手机专享】美国布朗博士蝴蝶型舒适安抚奶嘴');
+INSERT INTO `group_list_baby` VALUES ('199', '暂无评论', 'http://mp5.jmstatic.com/product/004/878/4878740_std/4878740_1000_1000.jpg?v=1581563119&imageView2/2/w/440/q/90', '16', '19', '[2人团]【手机专享】布朗博士爱宝选9安士/270ml宽口奶瓶防胀气导气管套装');
+INSERT INTO `group_list_baby` VALUES ('200', '暂无评论', 'http://mp6.jmstatic.com/product/004/730/4730014_std/4730014_1000_1000.jpg?v=1575617602&imageView2/2/w/440/q/90', '46', '225', '[2人团]【手机专享】贝壳元素春新款童休闲喇叭牛仔裤');
+INSERT INTO `group_list_baby` VALUES ('201', '暂无评论', 'http://mp6.jmstatic.com/product/005/148/5148410_std/5148410_1000_1000.jpg?v=1582612864&imageView2/2/w/440/q/90', '46', '215', '[2人团]【手机专享】贝壳元素女童毛衣开衫春装童装针织衫外套');
+INSERT INTO `group_list_baby` VALUES ('202', '8条评论', 'http://mp6.jmstatic.com/product/004/842/4842516_std/4842516_1000_1000.jpg?v=1571275829&imageView2/2/w/440/q/90', '29.9', '139', '[2人团]【手机专享】谷斐尔 GOPHER 儿童连体睡衣防踢连体');
+INSERT INTO `group_list_baby` VALUES ('203', '48条评论', 'http://mp5.jmstatic.com/product/004/694/4694936_std/4694936_1000_1000.jpg?v=1577347009&imageView2/2/w/440/q/90', '29.9', '138', '[2人团]【手机专享】欧培海洋球池帐篷90CM波点款送50球');
+INSERT INTO `group_list_baby` VALUES ('204', '12条评论', 'http://mp6.jmstatic.com/product/004/966/4966936_std/4966936_1000_1000.jpg?v=1582512538&imageView2/2/w/440/q/90', '39.9', '163', '[2人团]【手机专享】舒贝怡 儿童内衣套装秋卡通家居服');
+INSERT INTO `group_list_baby` VALUES ('205', '437条评论', 'http://mp6.jmstatic.com/product/003/779/3779762_std/3779762_1000_1000.jpg?v=1574316915&imageView2/2/w/440/q/90', '79', '299', '[2人团]【手机专享】gb好孩子小饿魔婴儿宽口径奶瓶【送');
+INSERT INTO `group_list_baby` VALUES ('206', '1条评论', 'http://mp6.jmstatic.com/product/004/970/4970026_std/4970026_1000_1000.jpg?v=1565071225&imageView2/2/w/440/q/90', '79', '299', '[2人团]【手机专享】B.DUCK儿童无缝304不锈钢内胆背带保');
+INSERT INTO `group_list_baby` VALUES ('207', '41条评论', 'http://mp5.jmstatic.com/product/004/825/4825572_std/4825572_1000_1000.jpg?v=1552983468&imageView2/2/w/440/q/90', '79', '289', '[2人团]【手机专享】安儿乐拉拉裤弹力裤男女通用尿不');
+INSERT INTO `group_list_baby` VALUES ('208', '1条评论', 'http://mp6.jmstatic.com/product/004/513/4513790_std/4513790_1000_1000.jpg?v=1535706761&imageView2/2/w/440/q/90', '79', '269', '[2人团]【手机专享】托马斯儿童防漏吸管保温水杯400ml');
+INSERT INTO `group_list_baby` VALUES ('209', '114条评论', 'http://mp5.jmstatic.com/product/004/292/4292868_std/4292868_1000_1000.jpg?v=1566548265&imageView2/2/w/440/q/90', '59', '199', '[2人团]【手机专享】亲润轻盈修护防晒乳液');
+INSERT INTO `group_list_baby` VALUES ('210', '20条评论', 'http://mp6.jmstatic.com/product/004/479/4479450_std/4479450_1000_1000.jpg?v=1562659290&imageView2/2/w/440/q/90', '89', '249', '[2人团]【手机专享】杯具熊 儿童卡通减重防水小书包');
+INSERT INTO `group_list_baby` VALUES ('211', '暂无评论', 'http://mp5.jmstatic.com/product/005/148/5148418_std/5148418_1000_1000.jpg?v=1582612875&imageView2/2/w/440/q/90', '59', '129', '[2人团]【手机专享】迪士尼儿童宝宝鸭嘴吸管耐摔夏季运动防漏水杯学生水壶');
+INSERT INTO `group_list_baby` VALUES ('212', '4条评论', 'http://mp6.jmstatic.com/product/005/069/5069338_std/5069338_1000_1000.jpg?v=1572420260&imageView2/2/w/440/q/90', '103', '219', '[2人团]【手机专享】帮宝适超薄干爽婴儿纸尿裤尿不湿');
+INSERT INTO `group_list_baby` VALUES ('213', '27条评论', 'http://mp6.jmstatic.com/product/002/994/2994101_std/2994101_1000_1000.jpg?v=1578986009&imageView2/2/w/440/q/90', '238', '408', '[2人团]【手机专享】十月妈咪孕妇护肤品银耳补水保湿化妆品修护养护月子哺乳期专用');
+INSERT INTO `group_list_baby` VALUES ('214', '暂无评论', 'http://mp6.jmstatic.com/product/005/106/5106154_std/5106154_1000_1000.jpg?v=1575343479&imageView2/2/w/440/q/90', '218', '325', '[2人团]【手机专享】惠氏(Wyeth)S-26金装膳儿加3段 全营养');
+INSERT INTO `group_list_baby` VALUES ('215', '暂无评论', 'http://mp5.jmstatic.com/product/004/876/4876828_std/4876828_1000_1000.jpg?v=1557475936&imageView2/2/w/440/q/90', '48', '69', '[2人团]【手机专享】满趣健奶粉分装盒组合装MK80103颜色');
+INSERT INTO `group_list_baby` VALUES ('216', '暂无评论', 'http://mp6.jmstatic.com/product/004/878/4878724_std/4878724_1000_1000.jpg?v=1581564631&imageView2/2/w/440/q/90', '39', '49', '[2人团]【手机专享】美国布朗博士蝴蝶型舒适安抚奶嘴12个月以上');
+INSERT INTO `group_list_baby` VALUES ('217', '暂无评论', 'http://mp6.jmstatic.com/product/004/962/4962036_std/4962036_1000_1000.jpg?v=1582017151&imageView2/2/w/440/q/90', '126', '158', '[2人团]【手机专享】布朗博士爱宝选9安士/270ml玻璃宽口奶瓶(欧洲版');
+INSERT INTO `group_list_baby` VALUES ('218', '1条评论', 'http://mp5.jmstatic.com/product/004/878/4878742_std/4878742_1000_1000.jpg?v=1556595220&imageView2/2/w/440/q/90', '18', '22', '[2人团]【手机专享】美国布朗博士奶瓶夹');
+INSERT INTO `group_list_baby` VALUES ('219', '1条评论', 'http://mp6.jmstatic.com/product/004/850/4850020_std/4850020_1000_1000.jpg?v=1582081332&imageView2/2/w/440/q/90', '59.9', '398', '[2人团]【手机专享】谷斐尔小宝宝衣服套装礼盒宝宝纯棉用品初生婴儿满月');
+INSERT INTO `group_list_baby` VALUES ('220', '4条评论', 'http://mp5.jmstatic.com/product/004/686/4686060_std/4686060_1000_1000.jpg?v=1563007228&imageView2/2/w/440/q/90', '66', '368', '[2人团]【手机专享】贝壳元素春秋女童绣花外套');
+INSERT INTO `group_list_baby` VALUES ('221', '3条评论', 'http://mp5.jmstatic.com/product/004/444/4444738_std/4444738_1000_1000.jpg?v=1581316292&imageView2/2/w/440/q/90', '21', '88', '[2人团]【手机专享】舒贝怡 宝宝纯棉无骨高腰裤秋款裤子');
+INSERT INTO `group_list_baby` VALUES ('222', '暂无评论', 'http://mp5.jmstatic.com/product/005/126/5126710_std/5126710_1000_1000.jpg?v=1578453538&imageView2/2/w/440/q/90', '62', '255', '[2人团]【手机专享】DuDi 婴儿洗澡盆新生儿折叠浴盆宝宝泡澡桶坐躺大号家用');
+INSERT INTO `group_list_baby` VALUES ('223', '暂无评论', 'http://mp6.jmstatic.com/product/004/944/4944574_std/4944574_1000_1000.jpg?v=1578565357&imageView2/2/w/440/q/90', '39', '149', '[2人团]【手机专享】凯蒂猫儿童tritan带背带立体杯盖吸管水壶');
+INSERT INTO `group_list_baby` VALUES ('224', '暂无评论', 'http://mp5.jmstatic.com/product/004/505/4505278_std/4505278_1000_1000.jpg?v=1557286849&imageView2/2/w/440/q/90', '69', '199', '[2人团]【手机专享】托马斯PPSU手柄背带两用吸管杯');
+INSERT INTO `group_list_baby` VALUES ('225', '1条评论', 'http://mp6.jmstatic.com/product/004/964/4964538_std/4964538_1000_1000.jpg?v=1569825691&imageView2/2/w/440/q/90', '69', '199', '[2人团]【手机专享】迪士尼儿童防漏抗摔宽嘴吸管杯');
+INSERT INTO `group_list_baby` VALUES ('226', '25条评论', 'http://mp6.jmstatic.com/product/004/955/4955020_std/4955020_1000_1000.jpg?v=1563520997&imageView2/2/w/440/q/90', '336', '792', '[2人团]【手机专享】尤妮佳moony进口婴儿拉拉裤女宝专用');
+INSERT INTO `group_list_baby` VALUES ('227', '101条评论', 'http://mp5.jmstatic.com/product/004/318/4318412_std/4318412_1000_1000.jpg?v=1551324345&imageView2/2/w/440/q/90', '39', '79', '[2人团]【手机专享】啵乐乐 婴儿驱蚊滚珠止痒祛痱');
+INSERT INTO `group_list_baby` VALUES ('228', '1条评论', 'http://mp6.jmstatic.com/product/005/083/5083830_std/5083830_1000_1000.jpg?v=1574069030&imageView2/2/w/440/q/90', '49', '98', '[2人团]【手机专享】耶丽娅 孕妇睡眠面膜 怀孕期可专用');
+INSERT INTO `group_list_baby` VALUES ('229', '158条评论', 'http://mp6.jmstatic.com/product/004/478/4478812_std/4478812_1000_1000.jpg?v=1571626794&imageView2/2/w/440/q/90', '138', '238', '[2人团]【手机专享】杯具熊 儿童半透三盖保温水杯');
+INSERT INTO `group_list_baby` VALUES ('230', '90条评论', 'http://mp6.jmstatic.com/product/002/856/2856897_std/2856897_1000_1000.jpg?v=1578986325&imageView2/2/w/440/q/90', '98', '169', '[2人团]【手机专享】十月妈咪 孕妇面膜银耳滋养化妆品补水面膜产妇专用护肤品6片装');
+INSERT INTO `group_list_baby` VALUES ('231', '4条评论', 'http://mp5.jmstatic.com/product/004/132/4132778_std/4132778_1000_1000.jpg?v=1565935511&imageView2/2/w/440/q/90', '32', '49', '[2人团]【手机专享】十月妈咪 孕妇一次性压缩毛巾8枚便');
+INSERT INTO `group_list_baby` VALUES ('232', '暂无评论', 'http://mp6.jmstatic.com/product/004/878/4878590_std/4878590_1000_1000.jpg?v=1557475937&imageView2/2/w/440/q/90', '39', '59', '[2人团]【手机专享】满趣健新款豪华奶瓶刷奶嘴刷子颜');
+INSERT INTO `group_list_baby` VALUES ('233', '暂无评论', 'http://mp5.jmstatic.com/product/005/055/5055802_std/5055802_1000_1000.jpg?v=1571554915&imageView2/2/w/440/q/90', '219', '299', '[2人团]【手机专享】玉泽皮肤屏障修护保湿护肤套装补');
+INSERT INTO `group_list_baby` VALUES ('234', '3条评论', 'http://mp5.jmstatic.com/product/004/878/4878734_std/4878734_1000_1000.jpg?v=1581566262&imageView2/2/w/440/q/90', '39', '48', '[2人团]【手机专享】美国布朗博士按摩牙胶3个月以上宝宝适用');
+INSERT INTO `group_list_baby` VALUES ('235', '暂无评论', 'http://mp5.jmstatic.com/product/004/878/4878714_std/4878714_1000_1000.jpg?v=1582604626&imageView2/2/w/440/q/90', '49', '58', '[2人团]【手机专享】美国布朗博士宝宝磨牙器婴儿玩具婴儿健齿硅胶牙胶');
+INSERT INTO `group_list_baby` VALUES ('236', '暂无评论', 'http://mp5.jmstatic.com/product/005/137/5137202_std/5137202_1000_1000.jpg?v=1578974449&imageView2/2/w/440/q/90', '89', '167', '[2人团]【手机专享】大王/维E系列阿卡佳增量版纸尿裤S90片/包');
+INSERT INTO `group_list_baby` VALUES ('237', '2条评论', 'http://mp5.jmstatic.com/product/005/079/5079194_std/5079194_1000_1000.jpg?v=1573026903&imageView2/2/w/440/q/90', '115', '159', '[2人团]【手机专享】花王大增量版婴儿拉拉裤XXL32片');
+INSERT INTO `group_list_baby` VALUES ('238', '8条评论', 'http://mp5.jmstatic.com/product/004/561/4561904_std/4561904_1000_1000.jpg?v=1559727541&imageView2/2/w/440/q/90', '19.9', '199', '[2人团]HD小龙哈彼樱花深层水柔亲肤温和湿');
+INSERT INTO `group_list_baby` VALUES ('239', '1条评论', 'http://mp6.jmstatic.com/product/005/145/5145662_std/5145662_1000_1000.jpg?v=1583380667&imageView2/2/w/440/q/90', '19.9', '39', '[2人团]德露宝婴儿洗衣液3kg母婴幼儿童孕妇适用无荧光剂孕妇儿童衣服');
+INSERT INTO `group_list_baby` VALUES ('240', '953条评论', 'http://mp6.jmstatic.com/product/003/779/3779686_std/3779686_1000_1000.jpg?v=1568961784&imageView2/2/w/440/q/90', '29', '199', '[2人团]gb好孩子婴儿橄榄洗发沐浴500ml洗头');
+INSERT INTO `group_list_baby` VALUES ('241', '17条评论', 'http://mp6.jmstatic.com/product/005/145/5145628_std/5145628_1000_1000.jpg?v=1581932398&imageView2/2/w/440/q/90', '9.9', '139', '[2人团]儿童纯棉口罩透气双层彩棉婴幼儿口罩');
+INSERT INTO `group_list_baby` VALUES ('242', '363条评论', 'http://mp5.jmstatic.com/product/003/825/3825258_std/3825258_1000_1000.jpg?v=1561109537&imageView2/2/w/440/q/90', '59', '179', '[2人团]啵乐乐 金盏花植物保湿面霜');
+INSERT INTO `group_list_baby` VALUES ('243', '719条评论', 'http://mp6.jmstatic.com/product/003/779/3779706_std/3779706_1000_1000.jpg?v=1568962070&imageView2/2/w/440/q/90', '89', '299', '[2人团]gb好孩子新手妈妈必备奶瓶套装');
+INSERT INTO `group_list_baby` VALUES ('244', '179条评论', 'http://mp5.jmstatic.com/product/004/478/4478784_std/4478784_1000_1000.jpg?v=1571626795&imageView2/2/w/440/q/90', '59', '149', '[2人团]杯具熊 儿童带吸管防摔学饮杯');
+INSERT INTO `group_list_baby` VALUES ('245', '133条评论', 'http://mp6.jmstatic.com/product/004/848/4848528_std/4848528_1000_1000.jpg?v=1564821983&imageView2/2/w/440/q/90', '39', '249', '[2人团]子初 孕妈护肤 植物修护隔离霜');
+INSERT INTO `group_list_baby` VALUES ('246', '4条评论', 'http://mp6.jmstatic.com/product/005/081/5081784_std/5081784_1000_1000.jpg?v=1578899300&imageView2/2/w/440/q/90', '118', '276', '[2人团]袋鼠妈妈 星钻光感奶油肌粉底液孕妇护肤品化妆品');
+INSERT INTO `group_list_baby` VALUES ('247', '980条评论', 'http://mp6.jmstatic.com/product/002/258/2258898_std/2258898_1000_1000.jpg?v=1579502648&imageView2/2/w/440/q/90', '35', '128', '[2人团]亲润豆乳睡眠面膜100g 孕妇面膜孕妇护肤品化妆品');
+INSERT INTO `group_list_baby` VALUES ('248', '2条评论', 'http://mp5.jmstatic.com/product/004/513/4513788_std/4513788_1000_1000.jpg?v=1535706760&imageView2/2/w/440/q/90', '39', '129', '[2人团]托马斯手柄吸管杯300ml');
+INSERT INTO `group_list_baby` VALUES ('249', '121条评论', 'http://mp5.jmstatic.com/product/004/696/4696146_std/4696146_1000_1000.jpg?v=1563861883&imageView2/2/w/440/q/90', '139', '289', '[2人团]妈咪宝贝纸尿裤尿不湿男女宝通用');
+INSERT INTO `group_list_baby` VALUES ('250', '25条评论', 'http://mp5.jmstatic.com/product/004/820/4820058_std/4820058_1000_1000.jpg?v=1572068713&imageView2/2/w/440/q/90', '49.9', '269', '[2人团]贝壳元素卡通外套春秋装女童童装');
+INSERT INTO `group_list_baby` VALUES ('251', '62条评论', 'http://mp5.jmstatic.com/product/004/955/4955034_std/4955034_1000_1000.jpg?v=1563520999&imageView2/2/w/440/q/90', '168', '396', '[2人团]尤妮佳moony进口婴儿拉拉裤男宝专用');
+INSERT INTO `group_list_baby` VALUES ('252', '31条评论', 'http://mp5.jmstatic.com/product/002/978/2978335_std/2978335_1000_1000.jpg?v=1575619565&imageView2/2/w/440/q/90', '29', '119', '[2人团]贝壳家族春秋女贴标外套儿童针织');
+INSERT INTO `group_list_baby` VALUES ('253', '110条评论', 'http://mp5.jmstatic.com/product/004/830/4830514_std/4830514_1000_1000.jpg?v=1580365041&imageView2/2/w/440/q/90', '48', '118', '[2人团]袋鼠妈妈孕妇口红润唇口红孕妇化妆品孕期彩妆孕妇护肤品');
+INSERT INTO `group_list_baby` VALUES ('254', '74条评论', 'http://mp6.jmstatic.com/product/004/954/4954994_std/4954994_1000_1000.jpg?v=1563520992&imageView2/2/w/440/q/90', '168', '396', '[2人团]尤妮佳moony进口婴儿纸尿裤男女通用');
+INSERT INTO `group_list_baby` VALUES ('255', '97条评论', 'http://mp5.jmstatic.com/product/004/837/4837390_std/4837390_1000_1000.jpg?v=1560835942&imageView2/2/w/440/q/90', '129', '212', '[2人团]帮宝适超薄干爽婴儿纸尿裤尿不湿');
+INSERT INTO `group_list_baby` VALUES ('256', '43条评论', 'http://mp6.jmstatic.com/product/003/967/3967724_std/3967724_1000_1000.jpg?v=1551166218&imageView2/2/w/440/q/90', '49', '128', '[2人团]欧培儿童积木塑料拼插大颗粒100粒');
+INSERT INTO `group_list_baby` VALUES ('257', '1条评论', 'http://mp5.jmstatic.com/product/005/106/5106152_std/5106152_1000_1000.jpg?v=1575343478&imageView2/2/w/440/q/90', '214', '328', '[2人团]惠氏(Wyeth)S-26金装膳儿加4段 全营养');
+INSERT INTO `group_list_baby` VALUES ('258', '4条评论', 'http://mp5.jmstatic.com/product/005/092/5092484_std/5092484_1000_1000.jpg?v=1574159135&imageView2/2/w/440/q/90', '49', '128', '[2人团]亲润孕妇变色唇膏孕妇专用滋润保');
+INSERT INTO `group_list_baby` VALUES ('259', '暂无评论', 'http://mp5.jmstatic.com/product/005/088/5088112_std/5088112_1000_1000.jpg?v=1573866497&imageView2/2/w/440/q/90', '29.9', '78', '[2人团]耶丽娅婴儿面霜 新生儿宝宝霜润肤');
+INSERT INTO `group_list_baby` VALUES ('260', '395条评论', 'http://mp6.jmstatic.com/product/004/035/4035138_std/4035138_1000_1000.jpg?v=1548124299&imageView2/2/w/440/q/90', '59', '119', '[2人团]韩国 啵乐乐儿童3D立体滋润面霜60g');
+INSERT INTO `group_list_baby` VALUES ('261', '暂无评论', 'http://mp5.jmstatic.com/product/005/146/5146642_std/5146642_1000_1000.jpg?v=1583120478&imageView2/2/w/440/q/90', '19.9', '39.9', '[2人团]进口儿童牙膏2-3-6-12岁可吞咽德露宝无氟婴幼儿宝宝牙膏牙刷套装');
+INSERT INTO `group_list_baby` VALUES ('262', '6条评论', 'http://mp6.jmstatic.com/product/004/986/4986642_std/4986642_1000_1000.jpg?v=1582100748&imageView2/2/w/440/q/90', '48', '258', '[2人团]植物主义孕妇唇釉哑光专用美唇膏彩妆化妆品植物哺乳怀孕期女口红');
+INSERT INTO `group_list_baby` VALUES ('263', '7条评论', 'http://mp5.jmstatic.com/product/004/271/4271104_std/4271104_1000_1000.jpg?v=1557286389&imageView2/2/w/440/q/90', '69', '229', '[2人团]B.DUCK小黄鸭PPSU手柄背带两用吸管杯');
+INSERT INTO `group_list_baby` VALUES ('264', '267条评论', 'http://mp6.jmstatic.com/product/003/523/3523076_std/3523076_1000_1000.jpg?v=1553132808&imageView2/2/w/440/q/90', '99', '289', '[2人团]安儿乐干爽超薄纸尿裤男女通用尿');
+INSERT INTO `group_list_baby` VALUES ('265', '1条评论', 'http://mp5.jmstatic.com/product/004/753/4753314_std/4753314_1000_1000.jpg?v=1547109293&imageView2/2/w/440/q/90', '39', '99', '[2人团]儿童手柄弹盖吸管水杯');
+INSERT INTO `group_list_baby` VALUES ('266', '43条评论', 'http://mp6.jmstatic.com/product/003/287/3287748_std/3287748_1000_1000.jpg?v=1575619638&imageView2/2/w/440/q/90', '39', '168', '[2人团]贝壳家族春秋季男童童装连帽卫衣');
+INSERT INTO `group_list_baby` VALUES ('267', '6条评论', 'http://mp6.jmstatic.com/product/004/967/4967670_std/4967670_1000_1000.jpg?v=1581316438&imageView2/2/w/440/q/90', '39.9', '169', '[2人团]舒贝怡 儿童睡衣宝宝长袖内衣套装秋');
+INSERT INTO `group_list_baby` VALUES ('268', '3条评论', 'http://mp6.jmstatic.com/product/004/192/4192548_std/4192548_1000_1000.jpg?v=1520903045&imageView2/2/w/440/q/90', '29', '119', '[2人团]Miffy米菲带重力球吸管水杯400ml');
+INSERT INTO `group_list_baby` VALUES ('269', '45条评论', 'http://mp5.jmstatic.com/product/003/966/3966318_std/3966318_1000_1000.jpg?v=1574664026&imageView2/2/w/440/q/90', '179', '699', '[2人团]亲润 孕妇护肤品天然豆乳水润隔离');
+INSERT INTO `group_list_baby` VALUES ('270', '42条评论', 'http://mp6.jmstatic.com/product/004/450/4450284_std/4450284_1000_1000.jpg?v=1579070573&imageView2/2/w/440/q/90', '26', '89', '[2人团]DuDi 婴儿指甲剪套装新生儿宝宝指甲刀防夹肉指甲钳婴幼儿儿童剪刀');
+INSERT INTO `group_list_baby` VALUES ('271', '54条评论', 'http://mp6.jmstatic.com/product/003/523/3523072_std/3523072_1000_1000.jpg?v=1572402004&imageView2/2/w/440/q/90', '99', '289', '[2人团]安儿乐干爽超薄纸尿裤男女通用尿');
+INSERT INTO `group_list_baby` VALUES ('272', '107条评论', 'http://mp5.jmstatic.com/product/004/837/4837376_std/4837376_1000_1000.jpg?v=1559718902&imageView2/2/w/440/q/90', '129', '270', '[2人团]帮宝适超薄干爽婴儿拉拉裤尿不湿');
+INSERT INTO `group_list_baby` VALUES ('273', '79条评论', 'http://mp6.jmstatic.com/product/003/680/3680408_std/3680408_1000_1000.jpg?v=1580970974&imageView2/2/w/440/q/90', '9.9', '52', '[2人团]DuDi 婴儿脸盆宝宝加厚洗脸洗屁屁奶牛盆 小号单个装');
+INSERT INTO `group_list_baby` VALUES ('274', '211条评论', 'http://mp5.jmstatic.com/product/003/302/3302852_std/3302852_1000_1000.jpg?v=1575619608&imageView2/2/w/440/q/90', '36.9', '185', '[2人团]贝壳家族春秋女童童装印花外套');
+INSERT INTO `group_list_baby` VALUES ('275', '4条评论', 'http://mp5.jmstatic.com/product/004/964/4964092_std/4964092_1000_1000.jpg?v=1581316993&imageView2/2/w/440/q/90', '29.9', '133', '[2人团]舒贝怡 宝宝内裤4条装卡通平角裤薄');
+INSERT INTO `group_list_baby` VALUES ('276', '4条评论', 'http://mp6.jmstatic.com/product/004/949/4949164_std/4949164_1000_1000.jpg?v=1566382004&imageView2/2/w/440/q/90', '36', '139', '[2人团]欧培 儿童益智玩具轨道滑翔车 四轨');
+INSERT INTO `group_list_baby` VALUES ('277', '359条评论', 'http://mp5.jmstatic.com/product/002/499/2499431_std/2499431_1000_1000.jpg?v=1574219830&imageView2/2/w/440/q/90', '178', '668', '[2人团]亲润樱花淡黄保湿5件套装 孕妇护肤');
+INSERT INTO `group_list_baby` VALUES ('278', '121条评论', 'http://mp6.jmstatic.com/product/004/696/4696146_std/4696146_1000_1000.jpg?v=1563861883&imageView2/2/w/440/q/90', '139', '289', '[2人团]妈咪宝贝纸尿裤尿不湿男女宝通用XL108片（12-17kg）');
+INSERT INTO `group_list_baby` VALUES ('279', '52条评论', 'http://mp6.jmstatic.com/product/004/955/4955030_std/4955030_1000_1000.jpg?v=1563520998&imageView2/2/w/440/q/90', '252', '594', '[2人团]尤妮佳moony进口婴儿拉拉裤男宝专用');
+INSERT INTO `group_list_baby` VALUES ('280', '37条评论', 'http://mp5.jmstatic.com/product/004/558/4558750_std/4558750_1000_1000.jpg?v=1571132709&imageView2/2/w/440/q/90', '59', '399', '[2人团]gb好孩子干湿两用棉柔巾纸巾600片');
+INSERT INTO `group_list_baby` VALUES ('281', '1条评论', 'http://mp5.jmstatic.com/product/004/964/4964574_std/4964574_1000_1000.jpg?v=1578565358&imageView2/2/w/440/q/90', '59', '399', '[2人团]凯蒂猫儿童立体滑盖不锈钢吸管保温杯');
+INSERT INTO `group_list_baby` VALUES ('282', '110条评论', 'http://mp5.jmstatic.com/product/003/191/3191113_std/3191113_1000_1000.jpg?v=1566268395&imageView2/2/w/440/q/90', '33', '168', '[2人团]欧培宝宝益智玩具多米诺骨牌100片');
+INSERT INTO `group_list_baby` VALUES ('283', '暂无评论', 'http://mp6.jmstatic.com/product/005/034/5034042_std/5034042_1000_1000.jpg?v=1570847596&imageView2/2/w/440/q/90', '79', '399', '[2人团]迪士尼儿童双杯盖两用吸管316不锈');
+INSERT INTO `group_list_baby` VALUES ('284', '暂无评论', 'http://mp6.jmstatic.com/product/004/513/4513784_std/4513784_1000_1000.jpg?v=1535706760&imageView2/2/w/440/q/90', '49.9', '179', '[2人团]托马斯两用吸管杯380ml');
+INSERT INTO `group_list_baby` VALUES ('285', '暂无评论', 'http://mp6.jmstatic.com/product/005/119/5119804_std/5119804_1000_1000.jpg?v=1576461894&imageView2/2/w/440/q/90', '29.9', '99', '[2人团]耶丽娅孕妇眉笔孕妇专用天然防水');
+INSERT INTO `group_list_baby` VALUES ('286', '暂无评论', 'http://mp6.jmstatic.com/product/004/970/4970028_std/4970028_1000_1000.jpg?v=1565071236&imageView2/2/w/440/q/90', '109', '299', '[2人团]托马斯儿童一杯四用不锈钢保温杯');
+INSERT INTO `group_list_baby` VALUES ('287', '3条评论', 'http://mp5.jmstatic.com/product/004/878/4878588_std/4878588_1000_1000.jpg?v=1557475937&imageView2/2/w/440/q/90', '34', '49', '[2人团]满趣健五色碗五彩小船零食碗5个装');
+INSERT INTO `group_list_baby` VALUES ('288', '暂无评论', 'http://mp6.jmstatic.com/product/004/926/4926050_std/4926050_1000_1000.jpg?v=1577439300&imageView2/2/w/440/q/90', '339', '459', '[2人团]惠氏启赋（Wyeth illuma）Atwo3段爱尔兰进口新规格12-36月');
+INSERT INTO `group_list_baby` VALUES ('289', '暂无评论', 'http://mp5.jmstatic.com/product/004/882/4882062_std/4882062_1000_1000.jpg?v=1557122408&imageView2/2/w/440/q/90', '109', '129', '[2人团]布朗博士爱宝选奶瓶');
+INSERT INTO `group_list_baby` VALUES ('290', '14条评论', 'http://mp5.jmstatic.com/product/004/649/4649604_std/4649604_1000_1000.jpg?v=1566033172&imageView2/2/w/440/q/90', '33', '39', '[2人团]十月妈咪产妇牙刷月子专用月子牙');
+INSERT INTO `group_list_baby` VALUES ('291', '1条评论', 'http://mp5.jmstatic.com/product/004/878/4878732_std/4878732_1000_1000.jpg?v=1582618037&imageView2/2/w/440/q/90', '33', '39', '[2人团]美国布朗博士奶粉盒便携外出三格分装盒AC038红色');
+INSERT INTO `group_list_baby` VALUES ('292', '暂无评论', 'http://mp5.jmstatic.com/product/004/944/4944576_std/4944576_1000_1000.jpg?v=1578565359&imageView2/2/w/440/q/90', '59', '399', '[2人团]凯蒂猫儿童背带不锈钢吸管保温杯');
+INSERT INTO `group_list_baby` VALUES ('293', '2条评论', 'http://mp5.jmstatic.com/product/004/136/4136616_std/4136616_1000_1000.jpg?v=1528879821&imageView2/2/w/440/q/90', '25', '126', '[2人团]DuDi 卡通河马水龙头导水槽 2个装');
+INSERT INTO `group_list_baby` VALUES ('294', '1条评论', 'http://mp6.jmstatic.com/product/004/842/4842518_std/4842518_1000_1000.jpg?v=1553850236&imageView2/2/w/440/q/90', '29', '139', '[2人团]谷斐尔 GOPHER 防晒衣纯棉轻薄透气夏');
+INSERT INTO `group_list_baby` VALUES ('295', '暂无评论', 'http://mp5.jmstatic.com/product/004/970/4970030_std/4970030_1000_1000.jpg?v=1565071236&imageView2/2/w/440/q/90', '79', '299', '[2人团]托马斯儿童无缝304不锈钢内胆背带');
+INSERT INTO `group_list_baby` VALUES ('296', '1条评论', 'http://mp5.jmstatic.com/product/004/671/4671374_std/4671374_1000_1000.jpg?v=1571626794&imageView2/2/w/440/q/90', '68', '248', '[2人团]杯具熊 儿童不锈钢双盖保温杯');
+INSERT INTO `group_list_baby` VALUES ('297', '2条评论', 'http://mp6.jmstatic.com/product/004/876/4876826_std/4876826_1000_1000.jpg?v=1557475938&imageView2/2/w/440/q/90', '39', '59', '[2人团]满趣健豪华新鲜食物咬咬袋颜色随');
+INSERT INTO `group_list_baby` VALUES ('298', '暂无评论', 'http://mp5.jmstatic.com/product/004/878/4878570_std/4878570_1000_1000.jpg?v=1556591942&imageView2/2/w/440/q/90', '34', '49', '[2人团]满趣健新鲜食物咬咬袋颜色随机');
+INSERT INTO `group_list_baby` VALUES ('299', '4条评论', 'http://mp6.jmstatic.com/product/004/878/4878730_std/4878730_1000_1000.jpg?v=1556595218&imageView2/2/w/440/q/90', '39', '49', '[2人团]布朗博士爱宝选宽口奶嘴');
+INSERT INTO `group_list_baby` VALUES ('300', '暂无评论', 'http://mp6.jmstatic.com/product/005/091/5091682_std/5091682_1000_1000.jpg?v=1577440374&imageView2/2/w/440/q/90', '269', '329', '[2人团]惠氏铂臻Wyeth 幼儿配方奶粉3段800g 瑞士原装进口');
+INSERT INTO `group_list_baby` VALUES ('301', '暂无评论', 'http://mp5.jmstatic.com/product/004/878/4878716_std/4878716_1000_1000.jpg?v=1557122407&imageView2/2/w/440/q/90', '66', '78', '[2人团]美国布朗博士软吸嘴训练杯颜色随');
+INSERT INTO `group_list_baby` VALUES ('302', '55条评论', 'http://mp6.jmstatic.com/product/003/072/3072353_std/3072353_1000_1000.jpg?v=1542698117&imageView2/2/w/440/q/90', '43', '49', '[2人团]十月妈咪清新漱口水孕妇护肤品');
 
 -- ----------------------------
 -- Table structure for group_list_beauty
@@ -724,7 +889,7 @@ CREATE TABLE `group_list_foods` (
   `jumeiPrice` varchar(255) DEFAULT NULL,
   `title` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`list_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT;
+) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT;
 
 -- ----------------------------
 -- Records of group_list_foods
@@ -736,6 +901,14 @@ INSERT INTO `group_list_foods` VALUES ('4', '9条评论', 'http://mp6.jmstatic.c
 INSERT INTO `group_list_foods` VALUES ('5', '49条评论', 'http://mp5.jmstatic.com/product/004/982/4982110_std/4982110_1000_1000.jpg?v=1565782054&imageView2/2/w/440/q/90', '128', '150', '[2人团]【手机专享】【官方授权】Swisse维生素C泡腾片 20片*3/盒');
 INSERT INTO `group_list_foods` VALUES ('6', '84条评论', 'http://mp6.jmstatic.com/product/004/910/4910800_std/4910800_1000_1000.jpg?v=1559527779&imageView2/2/w/440/q/90', '158', '199', '[2人团]【手机专享】【澳洲直邮】nulax乐康膏500g*2');
 INSERT INTO `group_list_foods` VALUES ('7', '20条评论', 'http://mp6.jmstatic.com/product/004/982/4982018_std/4982018_1000_1000.jpg?v=1565781162&imageView2/2/w/440/q/90', '216', '269', '[2人团]【手机专享】【官方授权】Swisse维生素C泡腾片 20片*3/盒');
+INSERT INTO `group_list_foods` VALUES ('8', '131条评论', 'http://mp5.jmstatic.com/product/004/913/4913032_std/4913032_1000_1000.jpg?v=1559639171&imageView2/2/w/440/q/90', '149', '248', '[2人团]【手机专享】【澳洲直邮】sw蔓越莓90粒');
+INSERT INTO `group_list_foods` VALUES ('9', '49条评论', 'http://mp5.jmstatic.com/product/004/982/4982110_std/4982110_1000_1000.jpg?v=1565782054&imageView2/2/w/440/q/90', '128', '150', '[2人团]【手机专享】【官方授权】Swisse维生素C泡腾片 20片*3/盒');
+INSERT INTO `group_list_foods` VALUES ('10', '94条评论', 'http://mp6.jmstatic.com/product/004/974/4974370_std/4974370_1000_1000.jpg?v=1565316227&imageView2/2/w/440/q/90', '96', '238', '[2人团]【手机专享】【官方授权】2盒装-Nu-lax乐康片西梅加强版');
+INSERT INTO `group_list_foods` VALUES ('11', '19条评论', 'http://mp5.jmstatic.com/product/004/719/4719422_std/4719422_1000_1000.jpg?v=1544773860&imageView2/2/w/440/q/90', '138', '366', '[2人团]ISDG 夜间+黄金酵素加速燃脂套装');
+INSERT INTO `group_list_foods` VALUES ('12', '16条评论', 'http://mp6.jmstatic.com/product/005/015/5015572_std/5015572_1000_1000.jpg?v=1582795693&imageView2/2/w/440/q/90', '238', '308', '[2人团]【手机专享】买1送2罐】汤臣倍健蛋白粉高蛋白质营养增强免疫力');
+INSERT INTO `group_list_foods` VALUES ('13', '84条评论', 'http://mp5.jmstatic.com/product/004/910/4910800_std/4910800_1000_1000.jpg?v=1559527779&imageView2/2/w/440/q/90', '158', '199', '[2人团]【手机专享】【澳洲直邮】nulax乐康膏500g*2');
+INSERT INTO `group_list_foods` VALUES ('14', '9条评论', 'http://mp5.jmstatic.com/product/005/015/5015600_std/5015600_1000_1000.jpg?v=1581410536&imageView2/2/w/440/q/90', '119', '168', '[2人团]30ml*10瓶】汤臣倍健胶原蛋白口服液 官方旗舰店');
+INSERT INTO `group_list_foods` VALUES ('15', '20条评论', 'http://mp5.jmstatic.com/product/004/982/4982018_std/4982018_1000_1000.jpg?v=1565781162&imageView2/2/w/440/q/90', '216', '269', '[2人团]【官方授权】Swisse维生素C泡腾片 20片*3/盒');
 
 -- ----------------------------
 -- Table structure for group_list_furniture
@@ -749,7 +922,7 @@ CREATE TABLE `group_list_furniture` (
   `jumeiPrice` varchar(255) DEFAULT NULL,
   `title` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`list_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT;
+) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT;
 
 -- ----------------------------
 -- Records of group_list_furniture
@@ -769,6 +942,23 @@ INSERT INTO `group_list_furniture` VALUES ('12', '暂无评论', 'http://mp5.jms
 INSERT INTO `group_list_furniture` VALUES ('13', '31条评论', 'http://mp5.jmstatic.com/product/005/143/5143596_std/5143596_1000_1000.jpg?v=1583221353&imageView2/2/w/440/q/90', '5.8', '10.8', '[2人团]笙木之源 免洗洗手凝胶洗手液60ml 便携式速干75%酒精浓度');
 INSERT INTO `group_list_furniture` VALUES ('14', '8561条评论', 'http://mp5.jmstatic.com/product/003/529/3529188_std/3529188_1000_1000.jpg?v=1498030966&imageView2/2/w/440/q/90', '15.1', '49', '[2人团]碧缇诗加厚垃圾袋（5卷装）');
 INSERT INTO `group_list_furniture` VALUES ('15', '42条评论', 'http://mp6.jmstatic.com/product/003/263/3263870_std/3263870_1000_1000.jpg?v=1484892682&imageView2/2/w/440/q/90', '109', '149', '[2人团]Artiart蝴蝶保温不倒杯');
+INSERT INTO `group_list_furniture` VALUES ('16', '10条评论', 'http://mp6.jmstatic.com/product/004/878/4878638_std/4878638_1000_1000.jpg?v=1560134090&imageView2/2/w/440/q/90', '29.9', '35.9', '[2人团]【手机专享】慕斯维 婴儿柔湿巾 6包装 成人家用 口手专用湿纸巾');
+INSERT INTO `group_list_furniture` VALUES ('17', '1815条评论', 'http://mp6.jmstatic.com/product/004/638/4638220_std/4638220_1000_1000.jpg?v=1571625276&imageView2/2/w/440/q/90', '21.9', '29.9', '[2人团]【手机专享】MUSIWEI 100抽天然棉美容巾 洗脸巾 多组合装');
+INSERT INTO `group_list_furniture` VALUES ('18', '457条评论', 'http://mp6.jmstatic.com/product/004/287/4287402_std/4287402_1000_1000.jpg?v=1531186167&imageView2/2/w/440/q/90', '15.9', '59.9', '[2人团]【手机专享】MUSIWEI硅胶软毛双面洁面刷去黑头');
+INSERT INTO `group_list_furniture` VALUES ('19', '79条评论', 'http://mp5.jmstatic.com/product/004/742/4742946_std/4742946_1000_1000.jpg?v=1567049769&imageView2/2/w/440/q/90', '39.9', '99', '[2人团]【手机专享】慕斯维 慢回弹记忆棉靠垫 腰靠');
+INSERT INTO `group_list_furniture` VALUES ('20', '42条评论', 'http://mp5.jmstatic.com/product/003/263/3263870_std/3263870_1000_1000.jpg?v=1484892682&imageView2/2/w/440/q/90', '109', '149', '[2人团]【手机专享】Artiart蝴蝶保温不倒杯');
+INSERT INTO `group_list_furniture` VALUES ('21', '9752条评论', 'http://mp5.jmstatic.com/product/003/527/3527452_std/3527452_1000_1000.jpg?v=1562050867&imageView2/2/w/440/q/90', '15.1', '49', '[2人团]【手机专享】碧缇诗纯色沐浴花球（两个装）');
+INSERT INTO `group_list_furniture` VALUES ('22', '93条评论', 'http://mp6.jmstatic.com/product/002/393/2393611_std/2393611_1000_1000.jpg?v=1457409657&imageView2/2/w/440/q/90', '45', '179', '[2人团]【手机专享】黑白能量旅行四件套組防水束口袋');
+INSERT INTO `group_list_furniture` VALUES ('23', '暂无评论', 'http://mp6.jmstatic.com/product/005/145/5145684_std/5145684_1000_1000.jpg?v=1582713638&imageView2/2/w/440/q/90', '37', '100', '[2人团]【手机专享】东阳光 84消毒液 1L装 消毒杀菌 浓缩配方');
+INSERT INTO `group_list_furniture` VALUES ('24', '2条评论', 'http://mp5.jmstatic.com/product/005/064/5064760_std/5064760_1000_1000.jpg?v=1583493074&imageView2/2/w/440/q/90', '29.9', '49', '[2人团]【手机专享】笙木之源新版茶树精油高浓度多效内衣清洗液');
+INSERT INTO `group_list_furniture` VALUES ('25', '暂无评论', 'http://mp5.jmstatic.com/product/005/145/5145682_std/5145682_1000_1000.jpg?v=1582713638&imageView2/2/w/440/q/90', '37', '55', '[2人团]【手机专享】东阳光双氧水消毒清洗喷雾 60ml 您的清洁卫士');
+INSERT INTO `group_list_furniture` VALUES ('26', '暂无评论', 'http://mp5.jmstatic.com/product/005/145/5145680_std/5145680_1000_1000.jpg?v=1582713638&imageView2/2/w/440/q/90', '43', '55', '[2人团]【手机专享】东阳光75%酒精消毒液 120ml多方面守护家人健康');
+INSERT INTO `group_list_furniture` VALUES ('27', '34条评论', 'http://mp5.jmstatic.com/product/005/143/5143596_std/5143596_1000_1000.jpg?v=1583481492&imageView2/2/w/440/q/90', '5.8', '10.8', '[2人团]笙木之源 免洗洗手凝胶洗手液60ml 便携式速干75%酒精浓度');
+INSERT INTO `group_list_furniture` VALUES ('28', '15条评论', 'http://mp5.jmstatic.com/product/005/144/5144784_std/5144784_1000_1000.jpg?v=1583218537&imageView2/2/w/440/q/90', '45', '89', '[2人团]【3瓶装】和美花房75%酒精喷雾消毒液家用办公室消免手洗杀菌');
+INSERT INTO `group_list_furniture` VALUES ('29', '58条评论', 'http://mp5.jmstatic.com/product/003/263/3263872_std/3263872_1000_1000.jpg?v=1486621019&imageView2/2/w/440/q/90', '116', '162', '[2人团]MOSH！牛奶瓶造型保溫杯350ml');
+INSERT INTO `group_list_furniture` VALUES ('30', '暂无评论', 'http://mp5.jmstatic.com/product/005/129/5129414_std/5129414_1000_1000.jpg?v=1578025133&imageView2/2/w/440/q/90', '80', '98', '[2人团]【官方授权】43°N蒸汽眼罩发热眼贴薰衣草香10片+无香10片');
+INSERT INTO `group_list_furniture` VALUES ('31', '8561条评论', 'http://mp6.jmstatic.com/product/003/529/3529188_std/3529188_1000_1000.jpg?v=1498030966&imageView2/2/w/440/q/90', '15.1', '49', '[2人团]碧缇诗加厚垃圾袋（5卷装）');
+INSERT INTO `group_list_furniture` VALUES ('32', '42条评论', 'http://mp6.jmstatic.com/product/003/263/3263870_std/3263870_1000_1000.jpg?v=1484892682&imageView2/2/w/440/q/90', '109', '149', '[2人团]Artiart蝴蝶保温不倒杯');
 
 -- ----------------------------
 -- Table structure for group_list_ladies
@@ -782,7 +972,7 @@ CREATE TABLE `group_list_ladies` (
   `jumeiPrice` varchar(255) DEFAULT NULL,
   `title` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`list_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=25 DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT;
+) ENGINE=InnoDB AUTO_INCREMENT=49 DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT;
 
 -- ----------------------------
 -- Records of group_list_ladies
@@ -811,6 +1001,30 @@ INSERT INTO `group_list_ladies` VALUES ('21', '暂无评论', 'http://mp6.jmstat
 INSERT INTO `group_list_ladies` VALUES ('22', '暂无评论', 'http://mp5.jmstatic.com/product/005/003/5003450_std/5003450_1000_1000.jpg?v=1567489441&imageView2/2/w/440/q/90', '49', '59', '[2人团]羊毛拉架园领打底衫661-7A韩版修身简约圆领长袖');
 INSERT INTO `group_list_ladies` VALUES ('23', '暂无评论', 'http://mp5.jmstatic.com/product/005/138/5138864_std/5138864_1000_1000.jpg?v=1579234170&imageView2/2/w/440/q/90', '59', '69', '[2人团]2020春装新款格子拼接长袖t恤女百搭洋气假两件打底衫');
 INSERT INTO `group_list_ladies` VALUES ('24', '7条评论', 'http://mp6.jmstatic.com/product/004/389/4389754_std/4389754_1000_1000.jpg?v=1529894649&imageView2/2/w/440/q/90', '68', '78', '[2人团]破洞牛仔裤女W8902女显瘦紧身微喇');
+INSERT INTO `group_list_ladies` VALUES ('25', '暂无评论', 'http://mp5.jmstatic.com/product/005/137/5137544_std/5137544_1000_1000.jpg?v=1579007965&imageView2/2/w/440/q/90', '59', '69', '[2人团]【手机专享】2020春款复古个性猫咪图案印花雪纺衬衫女上衣洋气衬衣潮');
+INSERT INTO `group_list_ladies` VALUES ('26', '暂无评论', 'http://mp6.jmstatic.com/product/005/054/5054326_std/5054326_1000_1000.jpg?v=1581653839&imageView2/2/w/440/q/90', '35.9', '39.9', '[2人团]【手机专享】抖音爆款收腹带瘦腰带塑腰带束腰带收腰带');
+INSERT INTO `group_list_ladies` VALUES ('27', '暂无评论', 'http://mp6.jmstatic.com/product/005/138/5138290_std/5138290_1000_1000.jpg?v=1579153603&imageView2/2/w/440/q/90', '55', '79', '[2人团]【手机专享】2020春季新款宽松向日葵印花格子拼接假两件T恤上衣女');
+INSERT INTO `group_list_ladies` VALUES ('28', '暂无评论', 'http://mp6.jmstatic.com/product/005/146/5146530_std/5146530_1000_1000.jpg?v=1582167741&imageView2/2/w/440/q/90', '55', '79', '[2人团]【手机专享】HYLS 长袖宽松港味单排扣大码bf条纹衬衫外套');
+INSERT INTO `group_list_ladies` VALUES ('29', '暂无评论', 'http://mp5.jmstatic.com/product/004/936/4936440_std/4936440_1000_1000.jpg?v=1562034289&imageView2/2/w/440/q/90', '110', '139', '[2人团]【手机专享】CHINSTUDIO雪梨钱夫人 法国小众波点开叉半身过膝a字裙');
+INSERT INTO `group_list_ladies` VALUES ('30', '暂无评论', 'http://mp6.jmstatic.com/product/004/864/4864448_std/4864448_1000_1000.jpg?v=1555580289&imageView2/2/w/440/q/90', '49', '59', '[2人团]【手机专享】新款韩版女装JQ1932休闲套头短袖t简约上衣圆领T恤');
+INSERT INTO `group_list_ladies` VALUES ('31', '13条评论', 'http://mp6.jmstatic.com/product/004/389/4389744_std/4389744_1000_1000.jpg?v=1529894643&imageView2/2/w/440/q/90', '68', '78', '[2人团]【手机专享】新款W8911女装微喇不规则喇叭裤');
+INSERT INTO `group_list_ladies` VALUES ('32', '暂无评论', 'http://mp5.jmstatic.com/product/004/864/4864450_std/4864450_1000_1000.jpg?v=1555580288&imageView2/2/w/440/q/90', '49', '59', '[2人团]【手机专享】新款韩版女装JQ1921休闲套头短袖t简约上衣圆领T恤');
+INSERT INTO `group_list_ladies` VALUES ('33', '暂无评论', 'http://mp5.jmstatic.com/product/004/936/4936460_std/4936460_1000_1000.jpg?v=1562034827&imageView2/2/w/440/q/90', '159', '189', '[2人团]【手机专享】CHINSTUDIO雪梨钱夫人 夏季修身开叉无袖显瘦连衣裙');
+INSERT INTO `group_list_ladies` VALUES ('34', '暂无评论', 'http://mp5.jmstatic.com/product/005/138/5138294_std/5138294_1000_1000.jpg?v=1579154178&imageView2/2/w/440/q/90', '59', '69', '[2人团]【手机专享】早春这件衬衣自留啦复古港味春秋格子长袖衬衫女');
+INSERT INTO `group_list_ladies` VALUES ('35', '12条评论', 'http://mp5.jmstatic.com/product/004/389/4389742_std/4389742_1000_1000.jpg?v=1529894642&imageView2/2/w/440/q/90', '68', '78', '[2人团]【手机专享】微喇叭裤牛仔裤W8910女装新款韩版');
+INSERT INTO `group_list_ladies` VALUES ('36', '暂无评论', 'http://mp5.jmstatic.com/product/004/864/4864452_std/4864452_1000_1000.jpg?v=1555580288&imageView2/2/w/440/q/90', '49', '59', '[2人团]【手机专享】新款韩版女装JQ1933休闲套头短袖t简约上衣圆领T恤');
+INSERT INTO `group_list_ladies` VALUES ('37', '暂无评论', 'http://mp5.jmstatic.com/product/005/138/5138308_std/5138308_1000_1000.jpg?v=1579154908&imageView2/2/w/440/q/90', '59', '69', '[2人团]【手机专享】领口织带衬衫女生日系学院风减龄上衣职业装少女衬衫');
+INSERT INTO `group_list_ladies` VALUES ('38', '暂无评论', 'http://mp5.jmstatic.com/product/004/389/4389746_std/4389746_1000_1000.jpg?v=1529894645&imageView2/2/w/440/q/90', '68', '78', '[2人团]【手机专享】牛仔裤女九分裤W8918女装小脚铅笔');
+INSERT INTO `group_list_ladies` VALUES ('39', '暂无评论', 'http://mp6.jmstatic.com/product/005/003/5003448_std/5003448_1000_1000.jpg?v=1567489441&imageView2/2/w/440/q/90', '49', '59', '[2人团]羊毛拉架园领打底衫661-8A韩版修身简约圆领长袖');
+INSERT INTO `group_list_ladies` VALUES ('40', '暂无评论', 'http://mp5.jmstatic.com/product/005/138/5138302_std/5138302_1000_1000.jpg?v=1579154352&imageView2/2/w/440/q/90', '55', '79', '[2人团]2020春修身百搭显瘦学生九分运动裤宽松直筒休闲萝卜哈伦裤女');
+INSERT INTO `group_list_ladies` VALUES ('41', '暂无评论', 'http://mp6.jmstatic.com/product/004/963/4963790_std/4963790_1000_1000.jpg?v=1564471290&imageView2/2/w/440/q/90', '95', '129', '[2人团]CHINSTUDIO雪梨钱夫人 薄款chic气质雪纺衬衫防晒衫');
+INSERT INTO `group_list_ladies` VALUES ('42', '暂无评论', 'http://mp6.jmstatic.com/product/004/389/4389750_std/4389750_1000_1000.jpg?v=1529894645&imageView2/2/w/440/q/90', '68', '78', '[2人团]牛仔裤女W8905A开叉阔腿裤微喇叭裤');
+INSERT INTO `group_list_ladies` VALUES ('43', '暂无评论', 'http://mp5.jmstatic.com/product/005/137/5137614_std/5137614_1000_1000.jpg?v=1579053765&imageView2/2/w/440/q/90', '69', '79', '[2人团]2020春装新款韩版女装 小马潮流时尚衬衫');
+INSERT INTO `group_list_ladies` VALUES ('44', '暂无评论', 'http://mp6.jmstatic.com/product/005/138/5138318_std/5138318_1000_1000.jpg?v=1579155446&imageView2/2/w/440/q/90', '39.9', '49', '[2人团]条纹假两件t恤女前短后长袖中长款韩版宽松学生T桖');
+INSERT INTO `group_list_ladies` VALUES ('45', '暂无评论', 'http://mp5.jmstatic.com/product/005/003/5003452_std/5003452_1000_1000.jpg?v=1567489441&imageView2/2/w/440/q/90', '49', '59', '[2人团]羊毛拉架园领打底衫661-6A韩版修身简约圆领长袖');
+INSERT INTO `group_list_ladies` VALUES ('46', '1条评论', 'http://mp5.jmstatic.com/product/004/389/4389752_std/4389752_1000_1000.jpg?v=1529894646&imageView2/2/w/440/q/90', '68', '78', '[2人团]微喇叭裤九分高腰牛仔裤W8903女装');
+INSERT INTO `group_list_ladies` VALUES ('47', '暂无评论', 'http://mp5.jmstatic.com/product/005/137/5137602_std/5137602_1000_1000.jpg?v=1579053486&imageView2/2/w/440/q/90', '69', '79', '[2人团]高领毛衣女套头加厚慵懒宽松外穿时尚韩版百搭打底衫');
+INSERT INTO `group_list_ladies` VALUES ('48', '暂无评论', 'http://mp5.jmstatic.com/product/004/209/4209832_std/4209832_1000_1000.jpg?v=1523433718&imageView2/2/w/440/q/90', '167', '189', '[2人团]钱夫人CHINSTUDIO 中长款针织连衣裙');
 
 -- ----------------------------
 -- Table structure for group_list_next
@@ -2259,4 +2473,22 @@ INSERT INTO `home_today_img` VALUES ('18', 'http://mp5.jmstatic.com//jmstore/ima
 INSERT INTO `home_today_img` VALUES ('19', 'http://mp6.jmstatic.com//jmstore/image/000/007/7950_std/5e5ddb8d78d44_2048_710.jpg?1583213587&imageView2/2/w/800/q/90');
 INSERT INTO `home_today_img` VALUES ('20', 'http://mp6.jmstatic.com//jmstore/image/000/007/7313_std/5e49f5dd12d53_2048_710.jpg?1583109445&imageView2/2/w/800/q/90');
 INSERT INTO `home_today_img` VALUES ('21', 'http://mp6.jmstatic.com//jmstore/image/000/008/8348_std/5e5c690dc9fbd_2048_710.jpg?1583308033&imageView2/2/w/800/q/90');
+
+-- ----------------------------
+-- Table structure for user_list
+-- ----------------------------
+DROP TABLE IF EXISTS `user_list`;
+CREATE TABLE `user_list` (
+  `user_id` int(255) NOT NULL AUTO_INCREMENT,
+  `phone` varchar(255) DEFAULT NULL,
+  `password` text,
+  PRIMARY KEY (`user_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of user_list
+-- ----------------------------
+INSERT INTO `user_list` VALUES ('1', '13434343434', '58cf703f664397ec4f0ac359b84b565c');
+INSERT INTO `user_list` VALUES ('2', '13434343435', '58cf703f664397ec4f0ac359b84b565c');
+INSERT INTO `user_list` VALUES ('3', '13333333333', '0b4e7a0e5fe84ad35fb5f95b9ceeac79');
 SET FOREIGN_KEY_CHECKS=1;

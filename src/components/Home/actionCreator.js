@@ -32,5 +32,26 @@ export default {
             ,payload:bool
         }
     }
+    ,
+    setPhone(value){
+        return {
+            type: 'SETPHONE'
+            ,payload:value
+        }
+    }
+    ,
+    setPassword1(value){
+        return {
+            type: 'SETPASSWORD1'
+            ,payload:value
+        }
+    }
+    ,
+    setPassword2(value){
+        return {
+            type: 'SETPASSWORD2'
+            ,payload:value
+        }
+    }
     
 }

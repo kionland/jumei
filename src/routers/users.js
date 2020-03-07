@@ -22,9 +22,7 @@ const { create, verify } = require('./token');
         * 数据渲染 分页 完成
 */
 
-
-
-// 验证用户是否存在
+// 验证-聚美优品-用户是否存在
 Router.get('/checkname', async (req, res) => {
     //接受前端数据
     let {
@@ -124,21 +122,17 @@ Router.get('/oneAdress', async (req, res) => {
 
 });
 
-//注册功能
+//-聚美优品-注册功能
 Router.post('/reg', urlencodeParser, express.json(), async (req, res) => {
     let {
-        username,
         password,
         phone
     } = req.body; //解构
-    console.log(req.body);
+    // console.log(req.body);
     
-    if (username && password && phone) {
-        let sql = `INSERT INTO userlist(username,password,phone) VALUES('${username}','${password}',${phone})`;
+    if ( password && phone) {
+        let sql = `INSERT INTO user_list(user_id,phone,password) VALUES(null,"${phone}",'${password}')`;
         let data = await query(sql);
-        console.log(data);
-
-
         let result = {};
         if (data.affectedRows) {
             //插入成功
@@ -146,7 +140,6 @@ Router.post('/reg', urlencodeParser, express.json(), async (req, res) => {
                 type: 1,
                 msg: '注册成功'
             }
-
         } else {
             result = {
                 type: 0,
@@ -154,8 +147,6 @@ Router.post('/reg', urlencodeParser, express.json(), async (req, res) => {
             }
         }
         res.send(result);
-
-
     } else {
         res.send('请填写全部数据')
     }
@@ -299,15 +290,13 @@ Router.patch('/patch', urlencodeParser, async (req, res) => {
 })
 
 
-//需求：登陆功能
+//需求：-聚美优品-登陆功能
 Router.get('/login', async (req, res) => {
     //接收前端数据
     // console.log(req);
-    let { username, password, keep } = req.query;
- 
-
-    if (username && password) {
-        let sql = `SELECT * FROM userlist WHERE username = '${username}' and password='${password}'`;
+    let { phone, password, keep } = req.query;
+    if (phone && password) {
+        let sql = `SELECT * FROM user_list WHERE phone = '${phone}' and password='${password}'`;
         let data = await query(sql);
         let result = {};
         if (data.length) { // '0' 真  0 假
