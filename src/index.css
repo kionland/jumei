@@ -10,6 +10,7 @@ body,html {
     width: 100%;
     height: 100%;
     background: #f2f2f2;
+    overflow-x: hidden;
 }
 #root{
   width: 100%;
@@ -51,11 +52,34 @@ form {
 input::-webkit-input-placeholder{
   color:#ccc;
 }
-
+a, a:link, a:visited, a:hover {
+    text-decoration: none;
+}
 
 .fl {
     float: left;
 }
 .fr {
     float: right;
+}
+.color3 {
+    color: #333;
+}
+.fs14 {
+    font-size: 14px;
+}
+.fs18 {
+    font-size: 18px;
+}
+.color9 {
+    color: #999;
+}
+.fs13 {
+    font-size: 13px;
+}
+.fs11 {
+    font-size: 11px;
+}
+.fs10 {
+    font-size: 10px;
 }

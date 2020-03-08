@@ -52,15 +52,15 @@ Router.get('/all', urlencodeParser, async (req, res) => {
     res.send(result);
 
 });
-//查询某个商品
-Router.get('/alls-product', urlencodeParser, async (req, res) => {
+//查询-聚美优品-某个商品
+Router.get('/product', urlencodeParser, async (req, res) => {
     let {
-        id,
-        types1
+        list_id,
+       table
     } = req.query;
     // console.log(type1);
 
-    let str = `SELECT * FROM ${types1} where id=${id} `;
+    let str = `SELECT * FROM ${table} where list_id=${list_id} `;
     let data = await query(str);
     let result = {};
     if (data.length) {

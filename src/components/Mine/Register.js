@@ -78,7 +78,7 @@ class Register extends Component {
         }
     }
     checkMsg = (event) => {
-        if (event.target.value.trim() * 1 != this.state.msg) {
+        if (event.target.value.trim() * 1 !== this.state.msg) {
 
             this.setState({
                 messageIsOk: false,
@@ -131,7 +131,7 @@ class Register extends Component {
     }
     checkPassword2 = (event) => {
         let value3 = event.target.value.trim()
-        if (value3 != this.props.MR.password1) {
+        if (value3 !== this.props.MR.password1) {
             this.setState({
                 password2IsOk: false,
                 warnText: "两次密码输入不一致，请重新输入",

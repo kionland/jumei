@@ -23,13 +23,14 @@ export default class Home extends Component {
         window.scrollTo(0,0)
     }
     render() {
+        
         return (
 
             <section className="search_defer">
                 <Header />
                 <SearchWrap />
                 <HeaderNav />
-                <MixcardList />
+                <MixcardList {...this.props}/>
                 <Freecount />
                 <Baby />
                 <Entrylux />

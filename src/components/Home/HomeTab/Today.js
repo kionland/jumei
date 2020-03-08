@@ -5,12 +5,13 @@ import { connect } from 'react-redux'
 import TodayDealItem from './TodayDealItem'
 import TodayJmstoreItem from './TodayJmstoreItem'
  class Today extends Component {
-    render() {
+     render() {
+        //  window.console.log( this.props);
         let { currentIndex } = this.props.MLR
         return (
             <div className="online-wrap" style={{ display: currentIndex === 0 ?'block':'none'}}>
                 <TodayJmstoreItem />
-                <TodayDealItem />
+                <TodayDealItem {...this.props}/>
             </div>
         )
     }

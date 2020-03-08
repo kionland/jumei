@@ -6,9 +6,9 @@ export default class CartEmpty extends Component {
         this.props.history.push("/home")
     }
     render() {
-        // window.console.log(this.props);
+        window.console.log(this.props);
         return (
-            <div className="page bg-empty">
+            <div className="page bg-empty" style={{display:this.props.tokenIsOk?"none":"block"}}>
                 <CartTop {...this.props}></CartTop>
                 <div className="cart-no-goods">
                     <div className="oops"></div>

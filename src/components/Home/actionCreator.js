@@ -53,5 +53,13 @@ export default {
             ,payload:value
         }
     }
+    ,
+    setListId(list_id,table){
+        return {
+            type: 'SETLISTID'
+            , payload: { list_id,table}
+        }
+    }
+   
     
 }

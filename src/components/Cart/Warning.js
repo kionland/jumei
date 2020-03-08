@@ -4,7 +4,7 @@ export default class Warning extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            visible:true
+            visible: false
         }
     }
     close = () => {
@@ -25,7 +25,7 @@ export default class Warning extends Component {
                         <div className="info"> C </div>
                     </div>
                     <div className="dialog-tail" >
-                        <a onClick={this.close}>知道了</a>
+                        <a onClick={this.close}>知靓了</a>
                     </div>
                 </div>
             </div>

@@ -16,7 +16,8 @@ import Tomorrow from './Tomorrow'
         this.props.changeIdx(index)
     }
     
-    render() {
+     render() {
+        //  window.console.log(this.props);
         let { titleList } = this.state;
         let { currentIndex } = this.props.MLR
         let { firstIndex}=this.props.HNR
@@ -32,8 +33,8 @@ import Tomorrow from './Tomorrow'
                     }
                    
                 </div>
-                <Today />
-                <Tomorrow />
+                <Today {...this.props}/>
+                <Tomorrow {...this.props}/>
             </section>
 
         )

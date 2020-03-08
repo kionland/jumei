@@ -1,5 +1,6 @@
 
 import NotFound from '../components/NotFound/NotFound'
+import Detail from '../components/Cart/Detail'
 import Register from '../components/Mine/Register'
 import Login from '../components/Mine/Login'
 import Cart from '../components/Cart/Cart'
@@ -100,6 +101,11 @@ const subRoutes = [
     {
         path: '/login',
         component: Login
+    }
+    ,
+    {
+        path: '/detail',
+        component: Detail
     }
 ]
  
