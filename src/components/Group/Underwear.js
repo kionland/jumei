@@ -4,16 +4,23 @@ export default class Underwear extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            list: []
+            list: [],
+            table: "group_list_underwear"
         }
     }
     componentDidMount() {
-        axios.get("http://localhost:9394/goods/jumei_all", { params: { table: "group_list_underwear" } }).then((res) => {
-            // window.console.log(res.data.data);
+        let { table } = this.state
+        axios.get("http://localhost:9394/goods/jumei_all", { params: { table } }).then((res) => {
             this.setState({
                 list: res.data.data
             })
         })
+    }
+    setPath = (list_id) => {
+        let { table } = this.state
+        setTimeout(() => {
+            this.props.history.push("/detail?table=" + table + "&list_id=" + list_id)
+        }, 100)
     }
     render() {
         return (
@@ -22,8 +29,8 @@ export default class Underwear extends Component {
                     <section className="product-items">
                         <ul className="product-con" tab="coutuan_home">
                             {
-                                this.state.list.map((item, index) => {
-                                    return <li key={item.list_id}>
+                                this.state.list.map((item) => {
+                                    return <li key={item.list_id} onClick={this.setPath.bind(this, item.list_id)}>
                                         <a className="goods">
                                             <div className="people-number">{item.buyNum}</div>
                                             <div className="goods-topsmall">
@@ -35,10 +42,10 @@ export default class Underwear extends Component {
                                             </div>
                                             <div className="goods-foot">
                                                 <div className="price-left">
-                                                    <span className="ct-price">¥{item.groupPrice}</span>
+                                                    <span className="ct-price">¥{item.jumeiPrice}</span>
                                                     <span className="sc-price"></span>
                                                     <span
-                                                        className="jm-price">单买价 ¥{item.jumeiPrice}</span>
+                                                        className="jm-price">单买价 ¥{item.delPrice}</span>
                                                 </div>
                                                 <div className="time-right timer">
                                                     <span className="goods-btn">去开团</span>

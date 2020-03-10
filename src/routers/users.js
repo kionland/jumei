@@ -333,6 +333,8 @@ Router.get('/login', async (req, res) => {
 Router.get('/verify', (req, res) => {
     let { token } = req.query;
     let result = verify(token);
+    // console.log(result);
+    
     let data = {};
     if (result) {
         data = {

@@ -10,10 +10,32 @@ Target Server Type    : MYSQL
 Target Server Version : 50520
 File Encoding         : 65001
 
-Date: 2020-03-08 00:18:16
+Date: 2020-03-10 00:24:07
 */
 
 SET FOREIGN_KEY_CHECKS=0;
+
+-- ----------------------------
+-- Table structure for cart_list
+-- ----------------------------
+DROP TABLE IF EXISTS `cart_list`;
+CREATE TABLE `cart_list` (
+  `cart_id` int(255) NOT NULL AUTO_INCREMENT,
+  `imgSrc` varchar(255) DEFAULT NULL,
+  `title` varchar(255) DEFAULT NULL,
+  `jumeiPrice` varchar(255) DEFAULT NULL,
+  `buyNum` int(255) DEFAULT NULL,
+  `checked` int(255) DEFAULT NULL,
+  `phone` varchar(255) DEFAULT NULL,
+  `table` varchar(255) DEFAULT NULL,
+  `list_id` int(255) DEFAULT NULL,
+  PRIMARY KEY (`cart_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of cart_list
+-- ----------------------------
+INSERT INTO `cart_list` VALUES ('6', 'http://mp5.jmstatic.com/product/004/909/4909356_std/4909356_dx_1154_400.jpg?_t=1583291933&imageView2/2/w/800/q/90', '日本•花印薏苡仁薏仁水化妆水500ml', '59.9', '1', '0', '13434343434', 'home_list_today', '2');
 
 -- ----------------------------
 -- Table structure for group_list_baby

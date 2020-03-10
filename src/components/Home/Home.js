@@ -20,7 +20,18 @@ export default class Home extends Component {
         // console.log(window.scrollY)
     }
     goTop = () => {
-        window.scrollTo(0,0)
+        // window.scrollTo(0, 0)
+        let timer = setInterval(function () {
+            //获取滚动条的滚动高度
+            var osTop = document.documentElement.scrollTop || document.body.scrollTop;
+            //用于设置速度差，产生缓动的效果
+            var speed = Math.floor(-osTop / 6);
+            document.documentElement.scrollTop = document.body.scrollTop = osTop + speed;
+            // isTop = true;  //用于阻止滚动事件清除定时器
+            if (osTop == 0) {
+                clearInterval(timer);
+            }
+        }, 100);
     }
     render() {
         
@@ -31,10 +42,10 @@ export default class Home extends Component {
                 <SearchWrap />
                 <HeaderNav />
                 <MixcardList {...this.props}/>
-                <Freecount />
-                <Baby />
-                <Entrylux />
-                <Discount />
+                <Freecount {...this.props}/>
+                <Baby {...this.props}/>
+                <Entrylux {...this.props}/>
+                <Discount {...this.props}/>
 
                 <Footer />
                 <a className="goto-top block" onClick={this.goTop}></a>

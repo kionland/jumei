@@ -60,7 +60,7 @@ Router.get('/product', urlencodeParser, async (req, res) => {
     } = req.query;
     // console.log(type1);
 
-    let str = `SELECT * FROM ${table} where list_id=${list_id} `;
+    let str = `SELECT * FROM ${table} where list_id=${list_id*1} `;
     let data = await query(str);
     let result = {};
     if (data.length) {

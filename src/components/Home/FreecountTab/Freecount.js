@@ -6,7 +6,7 @@ class Freecount extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            list: [
+            resList: [
                 {
                     img: "https://mp5.jmstatic.com/mobile/other/detail_page_guarantee/interantion_shipping.png?imageView2/2/w/51/q/70"
                     , name: "海外直供"
@@ -23,26 +23,36 @@ class Freecount extends Component {
                     img: "https://mp5.jmstatic.com/mobile/other/detail_page_guarantee/return_guarantee_7.png?imageView2/2/w/51/q/70"
                     , name: "轻松退货"
                 }
-            ]
-            ,resList:[]
+            ], list: [],
+            table: "home_list_freecount" 
+            
         }
     }
     componentDidMount() {
-        axios.get("http://localhost:9394/goods/jumei_all", { params: { table: "home_list_freecount" } }).then((res) => {
+        let { table } = this.state
+        axios.get("http://localhost:9394/goods/jumei_all", { params: { table } }).then((res) => {
             // window.console.log(res.data.data.slice(0, 50));
             this.setState({
-                resList: res.data.data
+                list: res.data.data
             })
         })
     }
+    setPath = (list_id) => {
+        let { table } = this.state
+        setTimeout(() => {
+            this.props.history.push("/detail?table=" + table + "&list_id=" + list_id)
+        }, 100)
+    }
     render() {
         let { firstIndex } = this.props.HNR
+        window.console.log(this.props);
+        
         return (
             <div style={{ display: firstIndex === 1 ? 'block' : 'none' }}>
                 <section id="deals-icon" className="deals-icon" >
                     <ul className="clear">
                         {
-                            this.state.list.map((item, index) => {
+                            this.state.resList.map((item, index) => {
                                 return <li key={index}>
                                     <a >
                                         <img
@@ -63,8 +73,8 @@ class Freecount extends Component {
                     </div>
                     <ul className="touch-activity-detail clear">
                         {
-                            this.state.resList.map((item, index) => {
-                                return <li key={item.list_id}>
+                            this.state.list.map((item) => {
+                                return <li key={item.list_id} onClick={this.setPath.bind(this, item.list_id)}>
                                     <a >
                                         <div className="product-info clear">
                                             <div className="product-img fl">
@@ -72,7 +82,7 @@ class Freecount extends Component {
                                                     src={item.smallImg}
                                                 />
                                                 <img className="lazy-load deal-img"
-                                                    src={item.bigImg}
+                                                    src={item.imgSrc}
                                                 />
                                             </div>
                                             <div className="fl product-desc">

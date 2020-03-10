@@ -1,14 +1,16 @@
 import React, { Component } from 'react'
 import CartTop from './CartTop'
-
-export default class CartEmpty extends Component {
+import actionCreator from '../Home/actionCreator';
+import { connect } from 'react-redux'
+ class CartEmpty extends Component {
     gohome = () => {
         this.props.history.push("/home")
     }
     render() {
-        window.console.log(this.props);
+        // window.console.log(this.props);
+        let { tokenIsOk, cartlist } = this.props.CR
         return (
-            <div className="page bg-empty" style={{display:this.props.tokenIsOk?"none":"block"}}>
+            <div className="page bg-empty" style={{ display: tokenIsOk && cartlist.length?"none":"block"}}>
                 <CartTop {...this.props}></CartTop>
                 <div className="cart-no-goods">
                     <div className="oops"></div>
@@ -19,3 +21,4 @@ export default class CartEmpty extends Component {
         )
     }
 }
+export default connect((state) => state, actionCreator)(CartEmpty);

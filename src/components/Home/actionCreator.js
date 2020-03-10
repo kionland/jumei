@@ -60,6 +60,41 @@ export default {
             , payload: { list_id,table}
         }
     }
+    ,
+    setToken(bool){
+        return {
+            type: 'SETTOKEN'
+            , payload: bool
+        }
+    }
+    ,
+    setCartlist(cartlist){
+        return {
+            type: 'SETCARTLIST'
+            , payload: cartlist
+        }
+    }
+    ,
+    changeVisible(bool){
+        return {
+            type: 'CHANGEVISIBLE'
+            , payload: bool
+        }
+    }
+    ,
+    comfirmRemove(bool){
+        return {
+            type: 'COMFIRMREMOVE'
+            , payload: bool
+        }
+    }
+    ,
+    everyIsChecked(bool){
+        return {
+            type: 'EVERYISCHECKED'
+            , payload: bool
+        }
+    }
    
     
 }

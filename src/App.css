@@ -192,6 +192,10 @@
     line-height: 2.25rem;
     font-size: .9375rem;
 }
+.over-lay .dialog .dialog-tail a:nth-child(2) {
+    background: #eee;
+    color: #333;
+}
 .warper1 {
     position: absolute;
     top: 0px;
@@ -415,6 +419,7 @@ font-size: 0.7rem;
     height: 100%;
     margin: 0 auto;
     display: block;
+   
 }
 .prod_detail {
     width: 20rem;

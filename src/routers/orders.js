@@ -9,6 +9,7 @@ var urlencodeParser = bodyParser.urlencoded({
 });
 const Router = express.Router(); //路由设置  Router==app
 
+//请勿使用SQL的关键字，比如name，table等，如果发现错误，不能查询或提示查询语句有问题，留意是否使用了SQL的关键字
 //需求：查询所有的用户信息
 Router.get('/all', async (req, res) => {
     let {
@@ -50,50 +51,44 @@ Router.get('/all', async (req, res) => {
     res.send(result);
 
 });
-//需求：查询详情页的某一个商品，是否在数据库
+//需求：查询-聚美优品-详情页的某一个商品，是否在数据库
 Router.get('/detail', async (req, res) => {
     let {
-        username,
-        types,
-        id,
-        size,
-        color
+        phone,table,list_id
     } = req.query;
     // console.log(req.query);
     
-    let str = `SELECT * FROM cars WHERE uname='${username}' AND leixing='${types}' AND yuanid=${id} AND size='${size}' AND color='${color}'`;
+    let str = "SELECT * FROM`cart_list` WHERE `phone` = '" + phone + "' AND `table_list` ='" + table + "' AND `list_id` = " + list_id +"";
     let data = await query(str);
+//    console.log(data[0].buyNum);
    
     let result = {};
     if (data.length) {
         //数据库里面查找到购物车有这个商品
         result = {
             type: 1,
-            msg: 'isHere'
+            msg: 'isHere',
+            buyNum: data[0].buyNum
         }
     } else {
         //数据库里面没有这个商品
         result = {
             type: 0,
-            msg: 'notHere'
+            msg: 'notHere',
+            buyNum: 1
         }
     }
-
     res.send(result);
-
 });
 
-//修改
-Router.patch('/patch', urlencodeParser, async (req, res) => {
+//修改-聚美优品-编辑购物车购买数量的开关
+Router.patch('/editBuyNum', urlencodeParser, express.json(),async (req, res) => {
     let = {
-        carid,
-        num,
-        color,
-        size
+        cart_id, phone, editBuyNum
     } = req.body;
 
-    if (carid) {
-        let sql = `UPDATE cars SET num= ${num}, color='${color}', size='${size}' WHERE carid=${carid}`;
+    if (cart_id && phone ) {
+        let sql = `UPDATE cart_list SET editBuyNum= ${editBuyNum} WHERE phone='${phone}' AND cart_id=${cart_id}`;
 
         let data = await query(sql);
 
@@ -119,15 +114,81 @@ Router.patch('/patch', urlencodeParser, async (req, res) => {
 
 
 });
-//需求：删除功能
+//修改-聚美优品-编辑购物车勾选商品的开关
+Router.patch('/changeChecked', urlencodeParser, express.json(),async (req, res) => {
+    let = {
+        cart_id, phone, checked
+    } = req.body;
+
+    if (cart_id && phone ) {
+        let sql = `UPDATE cart_list SET checked=${checked} WHERE phone='${phone}' AND cart_id=${cart_id}`;
+
+        let data = await query(sql);
+
+        let result = {};
+        if (data.affectedRows) {
+            result = {
+                type: 1,
+                msg: "修改成功"
+            }
+        } else {
+            //插入数据库失败
+            result = {
+                type: 0,
+                msg: "修改失败"
+            }
+        }
+        res.send(result);
+
+    } else {
+        res.send("请填写全部数据");
+    }
+
+
+
+});
+//修改-聚美优品-编辑购物车单一个商品的购买数量
+Router.patch('/changeBuyNum', urlencodeParser, express.json(),async (req, res) => {
+    let = {
+        cart_id, phone, buyNum
+    } = req.body;
+
+    if (cart_id && phone ) {
+        let sql = `UPDATE cart_list SET buyNum=${buyNum} WHERE phone='${phone}' AND cart_id=${cart_id}`;
+
+        let data = await query(sql);
+
+        let result = {};
+        if (data.affectedRows) {
+            result = {
+                type: 1,
+                msg: "修改成功"
+            }
+        } else {
+            //插入数据库失败
+            result = {
+                type: 0,
+                msg: "修改失败"
+            }
+        }
+        res.send(result);
+
+    } else {
+        res.send("请填写全部数据");
+    }
+
+
+
+});
+//需求：删除-聚美优品-购物车单一个商品的功能
 Router.delete("/del", urlencodeParser, express.json(),async (req, res) => {
     let {
-        carid
+        cart_id
     } = req.query;
-    console.log(carid);
+    // console.log(cart_id);
     
-    if (carid) {
-        let sql = `DELETE FROM cars WHERE carid=${carid}`;
+    if (cart_id) {
+        let sql = `DELETE FROM cart_list WHERE cart_id=${cart_id} `;
 
         let data = await query(sql);
 
@@ -150,41 +211,29 @@ Router.delete("/del", urlencodeParser, express.json(),async (req, res) => {
         res.send("请填写全部数据!");
     }
 })
-//需求：添加购物车订单功能
+//需求：添加-聚美优品-到购物车-订单功能
 Router.post("/add", urlencodeParser, express.json(),async (req, res) => {
     let {
-        uname,
-        gimg,
-        color,
-        size,
-        num,
-        price,
-        title,
-        shopname,
-        yuanid,
-        leixing
+        imgSrc, title, jumeiPrice, buyNum, phone, table, list_id 
     } = req.body;
-
-    console.log(req.body);
-    let str = `INSERT INTO cars (uname,gimg,color,size,num,price,carid,title,shopname,yuanid,leixing,ischecked) VALUES ('${uname}','${gimg}','${color}','${size}',${num},${price},null,'${title}','${shopname}',${yuanid},'${leixing}',0)`;
+    // console.log(req.body);
+    
+    let str = "INSERT INTO `cart_list`(`cart_id`, `imgSrc`, `title`, `jumeiPrice`, `buyNum`, `checked`, `phone`, `table_list`, `list_id`,`editBuyNum`) VALUES(null, '" + imgSrc + "', '" + title + "', '" + jumeiPrice + "'," + buyNum + ", " + 0 + ", '" + phone + "', '" + table + "', " + list_id + ", " + 0 + ")"
     let data = await query(str);
     // console.log(data);
 
     let result = {};
-    if (data.length) {
-        //数据库里面查找到购物车有这个商品
+    if (data.affectedRows) {
         result = {
             type: 1,
             msg: 'success'
         }
     } else {
-        //数据库里面没有这个商品
         result = {
             type: 0,
             msg: 'fail'
         }
     }
-
     res.send(result);
 })
 //需求：添加地址功能
@@ -254,16 +303,11 @@ Router.put("/putAdress", urlencodeParser, express.json(),async (req, res) => {
 //需求：修改购物车订单功能
 Router.put("/edit", urlencodeParser, express.json(),async (req, res) => {
     let {
-        uname,
-        color,
-        size,
-        num,
-        yuanid,
-        leixing
+        phone, table, list_id,buyNum
     } = req.body;
 
     // console.log(req.body);
-    let str = `UPDATE cars SET num=${num} WHERE uname='${uname}' AND color='${color}' AND size='${size}' AND yuanid=${yuanid} AND leixing='${leixing}'  `;
+    let str = `UPDATE cart_list SET buyNum=${buyNum} WHERE phone='${phone}' AND table_list='${table}' AND list_id='${list_id}' `;
     // let str = `UPDATE cars SET num=9 AND ischecked=1 AND shopchecked=1 WHERE uname='aaaaaa' AND yuanid=3 AND leixing='shoes' AND size='XL' AND color='黑色'`;
     let data = await query(str);
     // console.log(data);
@@ -285,16 +329,15 @@ Router.put("/edit", urlencodeParser, express.json(),async (req, res) => {
 
     res.send(result);
 })
-//需求：查询某一个的用户购物车信息，并在前端页面的购物车渲染做增删改查
-Router.get('/alllist', async (req, res) => {
-    let { username } = req.query;
-    let sql2 = `SELECT * FROM cars WHERE uname='${username}'`;
+//需求：查询-聚美优品-某一个的用户购物车信息，并在前端页面的购物车渲染做增删改查
+Router.get('/cartlist', async (req, res) => {
+    let { phone } = req.query;
+    let sql2 = `SELECT * FROM cart_list WHERE phone='${phone}'`;
     let data2 = await query(sql2);
 
     let result = {};
     if (data2.length) {
         //成功返回的数据
-
         result = {
             type: 1,
             msg: 'success',
@@ -309,9 +352,7 @@ Router.get('/alllist', async (req, res) => {
             datalist: []
         }
     }
-
     res.send(result);
-
 });
 
 

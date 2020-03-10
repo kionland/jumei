@@ -236,7 +236,7 @@ header .search {
 }
 .goto-top {
     position: fixed;
-    bottom: 3.5rem;
+    bottom: 6.5rem;
     width: 2.133rem;
     height: 2.133rem;
     z-index: 20;

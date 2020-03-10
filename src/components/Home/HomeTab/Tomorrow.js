@@ -7,23 +7,30 @@ class Tomorrow extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            list: []
+            list: [],
+            table: "home_list_tomorrow" 
         }
     }
     componentDidMount() {
-        axios.get("http://localhost:9394/goods/jumei_all", { params: { table: "home_list_tomorrow" } }).then((res) => {
-            // window.console.log(res.data.data);
+        let { table } = this.state
+        axios.get("http://localhost:9394/goods/jumei_all", { params: { table } }).then((res) => {
             this.setState({
                 list: res.data.data
             })
         })
     }
+    setPath = (list_id) => {
+        let { table } = this.state
+        setTimeout(() => {
+            this.props.history.push("/detail?table=" + table + "&list_id=" + list_id)
+        }, 100)
+    }
      render() {
          let { currentIndex } = this.props.MLR
         return (
             <div className="pre-wrap" style={{ display: currentIndex === 1 ? 'block' : 'none' }}>
-                {this.state.list.map((item, index) => {
-                    return <a className="product-item" key={item.list_id} >
+                {this.state.list.map((item) => {
+                    return <a className="product-item" key={item.list_id} onClick={this.setPath.bind(this, item.list_id)}>
                         <div className="deal-item item-each">
                             <div className="product-img">
                                 <img src={item.imgSrc} alt="" />
