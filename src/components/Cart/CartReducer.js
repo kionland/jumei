@@ -5,7 +5,8 @@ const initialState = {
     cartlist: [],
     visible: false,
     comfirmRemove: false,
-    everyIsChecked:false
+    everyIsChecked: false,
+    allPrice:0
 }
 
 export default (state = initialState, { type, payload }) => {
@@ -28,6 +29,9 @@ export default (state = initialState, { type, payload }) => {
         
         case 'EVERYISCHECKED':
             return { ...state, everyIsChecked: payload }
+        
+        case 'ALLPRICE':
+            return { ...state, allPrice: payload }
 
         default:
             return state

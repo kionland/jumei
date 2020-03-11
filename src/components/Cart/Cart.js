@@ -44,10 +44,14 @@ import { connect } from 'react-redux'
                 //失败
                 window.console.log("tokenIsOk---fail");
                 this.props.setToken(false)
+                localStorage.removeItem("phone")
+                localStorage.removeItem("token")
             }
         } else {
            window.console.log("没有token");
             this.props.setToken(false)
+            localStorage.removeItem("phone")
+            localStorage.removeItem("token")
         }
     }
     render() {

@@ -1,9 +1,12 @@
 ﻿import React, { Component } from 'react'
-import {  Link} from 'react-router-dom'
-export default class Unlogin extends Component {
+import { Link } from 'react-router-dom'
+import actionCreator from '../../Home/actionCreator';
+import { connect } from 'react-redux'
+ class Unlogin extends Component {
     render() {
+        let { tokenIsOk } = this.props.CR
         return (
-            <div className="user-unlogin">
+            <div className="user-unlogin" style={{ display: tokenIsOk?"none":"block"}}>
                 <div className="noportrait"></div>
                 <div className="operation">
                     <Link to="/reg">注册</Link>
@@ -15,3 +18,4 @@ export default class Unlogin extends Component {
         )
     }
 }
+export default connect((state) => state, actionCreator)(Unlogin);

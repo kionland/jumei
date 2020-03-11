@@ -32,6 +32,7 @@ export default {
             ,payload:bool
         }
     }
+    
     ,
     setPhone(value){
         return {
@@ -93,6 +94,13 @@ export default {
         return {
             type: 'EVERYISCHECKED'
             , payload: bool
+        }
+    }
+    ,
+    allPrice(allPrice){
+        return {
+            type: 'ALLPRICE'
+            , payload: allPrice
         }
     }
    

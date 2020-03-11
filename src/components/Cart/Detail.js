@@ -17,10 +17,12 @@ class Detail extends Component {
             table: '',
             list_id: 0
         }
+        this.verify = this.verify.bind(this)
     }
     componentDidMount() {
         let phone = localStorage.getItem("phone")
         let { table, list_id } = qs.parse(this.props.location.search.slice(1))
+       
         axios.get("http://localhost:9394/goods/product", { params: { table, list_id } }).then((res) => {
             // window.console.log(res.data.datalist[0]);
             this.setState({
@@ -45,7 +47,6 @@ class Detail extends Component {
                 recommendList: res.data.data.slice(0, 10)
             })
         })
-
         this.goTop();
     }
     goTop = () => {
@@ -132,14 +133,53 @@ class Detail extends Component {
                 })
             }
         })
-
+       
 
     }
-    buyNow = (event) => {
+    async verify() {//contex就是store   == this.$store.commit
+        let token = localStorage.getItem("token");
+        let { table, list_id } = qs.parse(this.props.location.search.slice(1))
+        if (token) {
+            //有token：登陆了，验证token
+            let { data } = await axios.get("http://localhost:9394/users/verify", {
+                params: {
+                    token
+                }
+            });
+            if (data.type) {
+                //成功
+                window.console.log("tokenIsOk");
+                this.props.setToken(true)
+                setTimeout(() => {
+                    this.props.history.push("/cart")
+                }, 50);
+            } else {
+                //失败
+                window.console.log("tokenIsOk---fail");
+                this.props.setToken(false)
+                localStorage.setItem("prevPage","/detail")
+                localStorage.removeItem("phone")
+                localStorage.removeItem("token")
+                setTimeout(() => {
+                    this.props.history.push("/login?table=" + table + "&list_id=" + list_id)
+                }, 50);
+            }
+        } else {
+            window.console.log("没有token");
+            this.props.setToken(false)
+            localStorage.setItem("prevPage", "/detail")
+            localStorage.removeItem("phone")
+            localStorage.removeItem("token")
+            setTimeout(() => {
+                this.props.history.push("/login?table=" + table + "&list_id=" + list_id)
+            }, 50);
+        }
+    }
+     buyNow=(event)=>{
         this.addCart(event);
-        setTimeout(() => {
-            this.props.history.push("/cart")
-        }, 100);
+         setTimeout(() => {
+            this.verify()
+        }, 50);
     }
     goback = () => {
         this.props.history.goBack();

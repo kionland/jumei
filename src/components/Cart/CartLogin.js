@@ -12,6 +12,8 @@ class CartLogin extends Component {
     }
     componentDidMount() {
         let phone = localStorage.getItem("phone")
+        window.console.log(phone);
+        
         axios.get("http://localhost:9394/orders/cartlist", { params: { phone } }).then((res) => {
             this.props.setCartlist(res.data.datalist)
         }).then(() => {
@@ -39,6 +41,14 @@ class CartLogin extends Component {
                 }).then(() => {
                     let all= this.props.CR.cartlist.every((item) =>  item.checked===1)
                     this.props.everyIsChecked(all)
+                    
+                }).then(() => {
+                    let allPrice = 0;
+                    let { cartlist } = this.props.CR
+                    cartlist.forEach((item) => {
+                        if(item.checked) (allPrice += item.buyNum * 1 * item.jumeiPrice)
+                        this.props.allPrice(allPrice)
+                    })
                 })
             }, 50);
         })
@@ -49,6 +59,13 @@ class CartLogin extends Component {
             setTimeout(() => {
                 axios.get("http://localhost:9394/orders/cartlist", { params: { phone } }).then((res) => {
                     this.props.setCartlist(res.data.datalist)
+                }).then(() => {
+                    let allPrice = 0;
+                    let { cartlist } = this.props.CR
+                    cartlist.forEach((item) => {
+                        if (item.checked) (allPrice += item.buyNum * 1 * item.jumeiPrice)
+                        this.props.allPrice(allPrice)
+                    })
                 })
             }, 50);
         })
@@ -59,6 +76,13 @@ class CartLogin extends Component {
             setTimeout(() => {
                 axios.get("http://localhost:9394/orders/cartlist", { params: { phone } }).then((res) => {
                     this.props.setCartlist(res.data.datalist)
+                }).then(() => {
+                    let allPrice = 0;
+                    let { cartlist } = this.props.CR
+                    cartlist.forEach((item) => {
+                        if (item.checked) (allPrice += item.buyNum * 1 * item.jumeiPrice)
+                        this.props.allPrice(allPrice)
+                    })
                 })
             }, 50);
         })
@@ -77,9 +101,15 @@ class CartLogin extends Component {
     changeAll = () => {
             this.props.everyIsChecked(!this.props.CR.everyIsChecked)
         setTimeout(() => {
-            window.console.log(this.props.CR.everyIsChecked);
+            // window.console.log(this.props.CR.everyIsChecked);
+            let allPrice = 0;
             let { cartlist, everyIsChecked } = this.props.CR
-            cartlist.forEach((item) => this.changeChecked(item.cart_id, everyIsChecked?0:1))
+            cartlist.forEach((item) => {
+                this.changeChecked(item.cart_id, everyIsChecked ? 0 : 1)
+                everyIsChecked ? (allPrice += item.buyNum * 1 * item.jumeiPrice) : (allPrice=0)
+                // window.console.log(allPrice);
+                this.props.allPrice(allPrice)
+            })
         }, 50);
     }
     goTop = () => {
@@ -96,8 +126,11 @@ class CartLogin extends Component {
             }
         }, 100);
     }
+    toDetail = (table_list, list_id) => {
+        this.props.history.push("/detail?table=" + table_list + "&list_id=" + list_id)
+    }
     render() {
-        let { tokenIsOk, cartlist, everyIsChecked } = this.props.CR
+        let { tokenIsOk, cartlist, everyIsChecked, allPrice } = this.props.CR
         // window.console.log(this.props.CR.everyIsChecked);
         return (
             <div style={{ display: tokenIsOk&&cartlist.length ? "block" : "none" }}>
@@ -110,7 +143,7 @@ class CartLogin extends Component {
                                 <div className="group-header">
                                     <span className={item.checked ? "check-box-checked" : "check-box-un-checked"} onClick={this.changeChecked.bind(this, item.cart_id, item.checked)}></span>
                                     <div className="group-title"> 聚美优品 自营商品 </div>
-                                    <span className="arrow-wrapper">
+                                    <span className="arrow-wrapper" onClick={this.toDetail.bind(this,item.table_list,item.list_id)}>
                                         <span>查看详情</span>
                                     </span>
                                 </div>
@@ -172,11 +205,11 @@ class CartLogin extends Component {
                         <div className="summary">
 
                             <span>合计</span>
-                            <span className="red">¥0</span>
+                            <span className="red">¥{allPrice}</span>
 
                         </div>
                     </div>
-                    <div className="submit-btn go-to-submit"> 去结算<span>(0)</span>
+                    <div className="submit-btn go-to-submit"> 去结算<span>({allPrice})</span>
                     </div>
                 </div>
                 {/* 弹出框 */}

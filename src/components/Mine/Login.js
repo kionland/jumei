@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import axios from 'axios'
+import qs from 'querystring'
 import actionCreator from '../Home/actionCreator';
 import { connect } from 'react-redux'
 import md5 from 'js-md5';
@@ -91,6 +92,7 @@ class Login extends Component {
     login = () => {
         let { phoneIsOk, passwordIsOk } = this.state;
         let { password1, phone } = this.props.MR
+        let { table, list_id } = qs.parse(this.props.location.search.slice(1))
         if (phoneIsOk && passwordIsOk) {
             axios.get(
                 "http://localhost:9394/users/login",
@@ -113,8 +115,14 @@ class Login extends Component {
                     localStorage.setItem("phone", phone);
                     this.props.changeWarn(true)
                     setTimeout(() => {
-                        this.props.changeWarn(false)
-                        this.props.history.push("/home")
+                        let prevPage = localStorage.getItem("prevPage")
+                        if (prevPage) {
+                            this.props.changeWarn(false)
+                            this.props.history.push(prevPage+"?table=" + table + "&list_id=" + list_id)
+                        } else {
+                            this.props.changeWarn(false)
+                            this.props.history.push("/home")
+                        }
                     }, 2000)
                 } else {
                     this.setState({
@@ -133,10 +141,10 @@ class Login extends Component {
     render() {
         let { regColor, warnColor, warnText, phoneIsOk, passwordIsOk } = this.state
         let { warnVisible, phone, password1 } = this.props.MR;
-        window.console.log("phone:" + phone);
-        window.console.log("phoneIsOk:" + phoneIsOk);
-        window.console.log("passwordIsOk:" + passwordIsOk);
-        window.console.log("password1:" + md5(password1));
+        // window.console.log("phone:" + phone);
+        // window.console.log("phoneIsOk:" + phoneIsOk);
+        // window.console.log("passwordIsOk:" + passwordIsOk);
+        // window.console.log("password1:" + md5(password1));
 
         return (
             <div className="warper1">

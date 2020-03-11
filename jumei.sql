@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50520
 File Encoding         : 65001
 
-Date: 2020-03-10 00:24:07
+Date: 2020-03-11 13:43:02
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -27,15 +27,27 @@ CREATE TABLE `cart_list` (
   `buyNum` int(255) DEFAULT NULL,
   `checked` int(255) DEFAULT NULL,
   `phone` varchar(255) DEFAULT NULL,
-  `table` varchar(255) DEFAULT NULL,
+  `table_list` varchar(255) DEFAULT NULL,
   `list_id` int(255) DEFAULT NULL,
+  `editBuyNum` int(255) DEFAULT NULL,
   PRIMARY KEY (`cart_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=31 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of cart_list
 -- ----------------------------
-INSERT INTO `cart_list` VALUES ('6', 'http://mp5.jmstatic.com/product/004/909/4909356_std/4909356_dx_1154_400.jpg?_t=1583291933&imageView2/2/w/800/q/90', '日本•花印薏苡仁薏仁水化妆水500ml', '59.9', '1', '0', '13434343434', 'home_list_today', '2');
+INSERT INTO `cart_list` VALUES ('12', 'http://mp6.jmstatic.com/product/005/020/5020530_std/5020530_dx_1154_400.jpg?_t=1573116827&imageView2/2/w/800/q/90', '【买一送一】美人符面膜补水保湿提亮肤色收缩毛孔', '39', '2', '1', '13434343434', 'home_list_today', '1', '1');
+INSERT INTO `cart_list` VALUES ('13', 'http://mp5.jmstatic.com/product/001/312/1312627_std/1312627_dx_1154_400.jpg?_t=1566539078&imageView2/2/w/800/q/90', '露丝滋润马油身体润肤乳485ml，拒绝“搓泥”尴尬！', '35', '1', '1', '13434343434', 'home_list_tomorrow', '2', '1');
+INSERT INTO `cart_list` VALUES ('14', 'http://mp6.jmstatic.com/product/005/056/5056920_std/5056920_1000_1000.jpg?v=1571650559&imageView2/2/w/264/q/90', '雪花秀雨润修护睡眠面膜中样30ml', '42', '2', '1', '13434343434', 'home_list_freecount', '1', '1');
+INSERT INTO `cart_list` VALUES ('15', 'http://mp6.jmstatic.com/product/004/569/4569842_std/4569842_1000_1000.jpg?v=1562046455&imageView2/2/w/440/q/90', '[2人团]【手机专享】HD小龙哈彼樱花亲肤温和湿巾袋盖', '19.9', '1', '1', '13434343434', 'group_list_next', '1', '1');
+INSERT INTO `cart_list` VALUES ('23', 'http://mp6.jmstatic.com/product/005/020/5020530_std/5020530_dx_1154_400.jpg?_t=1573116827&imageView2/2/w/800/q/90', '【买一送一】美人符面膜补水保湿提亮肤色收缩毛孔', '39', '1', '1', '19999999999', 'home_list_today', '1', '0');
+INSERT INTO `cart_list` VALUES ('24', 'http://mp6.jmstatic.com/product/005/020/5020530_std/5020530_dx_1154_400.jpg?_t=1573116827&imageView2/2/w/800/q/90', '【买一送一】美人符面膜补水保湿提亮肤色收缩毛孔', '39', '1', '0', 'null', 'home_list_today', '2', '0');
+INSERT INTO `cart_list` VALUES ('25', 'http://mp6.jmstatic.com/product/004/637/4637104_std/4637104_dx_1154_400.jpg?_t=1548320003&imageView2/2/w/800/q/90', '【肌肤自带磨皮滤镜】 RVBLAB无硅丝滑妆前乳30ML。', '159', '1', '0', 'null', 'home_list_today', '10', '0');
+INSERT INTO `cart_list` VALUES ('26', 'http://mp6.jmstatic.com/product/004/637/4637104_std/4637104_dx_1154_400.jpg?_t=1548320003&imageView2/2/w/800/q/90', '【肌肤自带磨皮滤镜】 RVBLAB无硅丝滑妆前乳30ML。', '159', '1', '1', '19999999999', 'home_list_today', '10', '0');
+INSERT INTO `cart_list` VALUES ('27', 'http://mp5.jmstatic.com/product/001/312/1312627_std/1312627_dx_1154_400.jpg?_t=1566539078&imageView2/2/w/800/q/90', '露丝滋润马油身体润肤乳485ml，拒绝“搓泥”尴尬！', '35', '1', '1', '19999999999', 'home_list_tomorrow', '2', '0');
+INSERT INTO `cart_list` VALUES ('28', 'http://mp5.jmstatic.com/product/005/123/5123104_std/5123104_1000_1000.jpg?v=1578910063&imageView2/2/w/440/q/90', '[2人团]【手机专享】尤咪优妮化妆棉 卸妆棉厚款脸部湿敷爽肤水专用3袋600片', '39', '1', '0', 'null', 'group_list_recommend', '2', '0');
+INSERT INTO `cart_list` VALUES ('29', 'http://mp5.jmstatic.com/product/005/123/5123104_std/5123104_1000_1000.jpg?v=1578910063&imageView2/2/w/440/q/90', '[2人团]【手机专享】尤咪优妮化妆棉 卸妆棉厚款脸部湿敷爽肤水专用3袋600片', '39', '1', '1', '19999999999', 'group_list_recommend', '2', '0');
+INSERT INTO `cart_list` VALUES ('30', 'http://mp5.jmstatic.com/product/005/017/5017840_std/5017840_1000_1000.jpg?v=1572488328&imageView2/2/w/440/q/90', '[2人团]【手机专享】JM面膜水光针剂急救面膜 2盒（20片）', '89', '1', '1', '19999999999', 'group_list_recommend', '5', '0');
 
 -- ----------------------------
 -- Table structure for group_list_baby
@@ -45,8 +57,8 @@ CREATE TABLE `group_list_baby` (
   `list_id` int(255) NOT NULL AUTO_INCREMENT,
   `buyNum` varchar(255) DEFAULT NULL,
   `imgSrc` varchar(255) DEFAULT NULL,
-  `groupPrice` varchar(255) DEFAULT NULL,
   `jumeiPrice` varchar(255) DEFAULT NULL,
+  `delPrice` varchar(255) DEFAULT NULL,
   `title` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`list_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=303 DEFAULT CHARSET=utf8;
@@ -365,8 +377,8 @@ CREATE TABLE `group_list_beauty` (
   `list_id` int(255) NOT NULL AUTO_INCREMENT,
   `buyNum` varchar(255) DEFAULT NULL,
   `imgSrc` varchar(255) DEFAULT NULL,
-  `groupPrice` varchar(255) DEFAULT NULL,
   `jumeiPrice` varchar(255) DEFAULT NULL,
+  `delPrice` varchar(255) DEFAULT NULL,
   `title` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`list_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=525 DEFAULT CHARSET=utf8;
@@ -907,8 +919,8 @@ CREATE TABLE `group_list_foods` (
   `list_id` int(255) NOT NULL AUTO_INCREMENT,
   `buyNum` varchar(255) DEFAULT NULL,
   `imgSrc` varchar(255) DEFAULT NULL,
-  `groupPrice` varchar(255) DEFAULT NULL,
   `jumeiPrice` varchar(255) DEFAULT NULL,
+  `delPrice` varchar(255) DEFAULT NULL,
   `title` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`list_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT;
@@ -940,8 +952,8 @@ CREATE TABLE `group_list_furniture` (
   `list_id` int(255) NOT NULL AUTO_INCREMENT,
   `buyNum` varchar(255) DEFAULT NULL,
   `imgSrc` varchar(255) DEFAULT NULL,
-  `groupPrice` varchar(255) DEFAULT NULL,
   `jumeiPrice` varchar(255) DEFAULT NULL,
+  `delPrice` varchar(255) DEFAULT NULL,
   `title` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`list_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT;
@@ -990,8 +1002,8 @@ CREATE TABLE `group_list_ladies` (
   `list_id` int(255) NOT NULL AUTO_INCREMENT,
   `buyNum` varchar(255) DEFAULT NULL,
   `imgSrc` varchar(255) DEFAULT NULL,
-  `groupPrice` varchar(255) DEFAULT NULL,
   `jumeiPrice` varchar(255) DEFAULT NULL,
+  `delPrice` varchar(255) DEFAULT NULL,
   `title` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`list_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=49 DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT;
@@ -1056,8 +1068,8 @@ CREATE TABLE `group_list_next` (
   `list_id` int(255) NOT NULL AUTO_INCREMENT,
   `buyNum` varchar(255) DEFAULT NULL,
   `imgSrc` varchar(255) DEFAULT NULL,
-  `groupPrice` varchar(255) DEFAULT NULL,
   `jumeiPrice` varchar(255) DEFAULT NULL,
+  `delPrice` varchar(255) DEFAULT NULL,
   `title` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`list_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=432 DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT;
@@ -1505,8 +1517,8 @@ CREATE TABLE `group_list_recommend` (
   `list_id` int(255) NOT NULL AUTO_INCREMENT,
   `buyNum` varchar(255) DEFAULT NULL,
   `imgSrc` varchar(255) DEFAULT NULL,
-  `groupPrice` varchar(255) DEFAULT NULL,
   `jumeiPrice` varchar(255) DEFAULT NULL,
+  `delPrice` varchar(255) DEFAULT NULL,
   `title` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`list_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=227 DEFAULT CHARSET=utf8;
@@ -1749,8 +1761,8 @@ CREATE TABLE `group_list_underwear` (
   `list_id` int(255) NOT NULL AUTO_INCREMENT,
   `buyNum` varchar(255) DEFAULT NULL,
   `imgSrc` varchar(255) DEFAULT NULL,
-  `groupPrice` varchar(255) DEFAULT NULL,
   `jumeiPrice` varchar(255) DEFAULT NULL,
+  `delPrice` varchar(255) DEFAULT NULL,
   `title` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`list_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=45 DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT;
@@ -1975,7 +1987,7 @@ CREATE TABLE `home_list_freecount` (
   `jumeiPrice` varchar(255) DEFAULT NULL,
   `delPrice` varchar(255) DEFAULT NULL,
   `smallImg` varchar(255) DEFAULT NULL,
-  `bigImg` varchar(255) DEFAULT NULL,
+  `imgSrc` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`list_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=184 DEFAULT CHARSET=utf8;
 
@@ -2505,7 +2517,7 @@ CREATE TABLE `user_list` (
   `phone` varchar(255) DEFAULT NULL,
   `password` text,
   PRIMARY KEY (`user_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of user_list
@@ -2513,4 +2525,5 @@ CREATE TABLE `user_list` (
 INSERT INTO `user_list` VALUES ('1', '13434343434', '58cf703f664397ec4f0ac359b84b565c');
 INSERT INTO `user_list` VALUES ('2', '13434343435', '58cf703f664397ec4f0ac359b84b565c');
 INSERT INTO `user_list` VALUES ('3', '13333333333', '0b4e7a0e5fe84ad35fb5f95b9ceeac79');
+INSERT INTO `user_list` VALUES ('4', '19999999999', '58cf703f664397ec4f0ac359b84b565c');
 SET FOREIGN_KEY_CHECKS=1;

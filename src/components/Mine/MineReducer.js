@@ -13,11 +13,13 @@ export default (state = initialState, { type, payload }) => {
 
         case 'SETPHONE':
             return { ...state, phone: payload }
+        
         case 'SETPASSWORD1':
             return { ...state, password1: payload }
+        
         case 'SETPASSWORD2':
             return { ...state, password2: payload }
-
+        
         default:
             return state
     }
